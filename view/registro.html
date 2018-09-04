@@ -1,0 +1,85 @@
+<div layout="column" layout-align="center center">
+	<img src="imgs/logo_correo.png" logo-form><br>
+	<div flex layout-fill contenedor-form>
+		<div class="centrar">
+			<label label-form><strong>Registro</strong></label><br>
+			Ingresa tus datos correctamente
+		</div>
+		<div class="spaceTool"></div>
+		<md-content centrado fuente flex="" layout="row" layout-padding="" style="background-color: transparent;">
+			<div layout="column" ng-cloak="" layout-fill class="main md-inline-form">
+				<!-- Datos de registro-->
+		    	<form name="formRegistro">
+		    		<div layout-gt-sm="row">			           
+		      			<!-- Nombre (s) -->
+		      			<md-input-container class="md-block" flex-gt-sm="">
+							<label>Nombre (s)</label>
+							<md-icon md-svg-src="imgs/icons/ic_account_box_black_24px.svg"></md-icon>
+							<input required name="nombre" ng-model="datos.nombre">
+							<div ng-messages="formRegistro.nombre.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+					        	<div ng-message="required">
+					            	Ingresa tu nombre.
+					          	</div>
+					        </div>
+						</md-input-container>
+		        	</div>
+
+		        	<div layout-gt-sm="row">			           
+		      			<!-- Correo -->
+		      			<md-input-container class="md-block" flex-gt-sm="">
+							<label>Correo electrónico</label>
+							<md-icon md-svg-src="imgs/icons/ic_contact_mail_black_24px.svg"></md-icon>
+							<input required name="correo_electronico" ng-model="datos.correo_electronico">
+							<div ng-messages="formRegistro.correo_electronico.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+					        	<div ng-message="required">
+					            	Ingresa un correo electrónico.
+					          	</div>
+					        </div>
+						</md-input-container>
+					</div>
+
+		        	<div layout-gt-sm="row">			           
+		      			<!-- * Contraseña -->
+				        <md-input-container class="md-block" flex-gt-xs="">
+		                	<label>Contraseña</label>
+		                	<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+		                	<input type="password" required name="contrasena" ng-pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/" ng-model="datos.contrasena">
+		                	<div ng-messages="formRegistro.contrasena.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+							   	<div ng-message="required">
+							       	Se requiere una contraseña.
+							   	</div>
+							   	<div ng-message="pattern">
+							   		La contraseña debe tener 8 o más caracteres, al menos un número, una letra mayúscula y una minúscula.
+							   	</div>
+							</div>
+		             	</md-input-container>
+	             	</div>
+	             	<div layout-gt-sm="row">
+						<!-- * Repetir contraseña -->
+		             	<md-input-container class="md-block" flex-gt-xs="">
+		                	<label>Repetir contraseña</label>
+		                	<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+		                	<input type="password" required name="repetir_contrasena" same-as="datos.contrasena" ng-model="datos.repetir_contrasena">
+		                	<div ng-messages="formRegistro.repetir_contrasena.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+							   	<div ng-message="required">
+							       	Campo obligatorio
+							   	</div>
+							   	<div ng-message="same-as">
+							       	Las contraseñas no coinciden
+							   	</div>
+							</div>
+		             	</md-input-container>
+		        	</div>
+		    		<div layout="row">
+		    			<div flex layout="row" layout-align="start top">
+		    				<md-button class="md-raised md-primary" ng-click="goToHome()">Página principal</md-button>
+		    			</div>
+		    			<div flex layout="row" layout-align="end top">
+		    				<md-button class="md-raised md-primary" ng-click="registrar()">Registrarse</md-button>
+		    			</div>
+		    		</div>
+		    	</form>
+			</div>
+		</md-content>
+	</div>
+</div>

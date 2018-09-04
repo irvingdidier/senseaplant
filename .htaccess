@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ index.html
+
+
+Options All -Indexes
+
+# Order Deny,Allow
+# Deny from all
+# Allow from 192.168.15
+# Allow from 192.168.1
+# Allow from 127.0.0.1
+# Allow from localhost
+# Allow from 189.161.192.244
+# Allow from 177.226.235.171
+# Allow from 201.166.189
+# Allow from 65.39.128.42
+
+# ErrorDocument 404 /admin_rien/404.html

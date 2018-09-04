@@ -1,0 +1,410 @@
+﻿<div class="wrapper">
+	<div class="content">
+
+		<!-- Toolbar Desktop -->
+		<dir-toolbar-desk></dir-toolbar-desk>
+
+
+		<!-- Toolbar móvil y sidenav-->
+		<dir-toolbar-movil></dir-toolbar-movil>
+
+		<md-content>
+
+			<!-- Grilla -->
+			<section seccion-1 hide-sm hide-xs>
+				<div hide-xs hide-sm class="spaceTool"></div>
+				<md-content layout-padding style="background-color: transparent;margin-top: 5%;">
+					<md-grid-list md-cols-gt-md="12" md-cols="1" md-cols-sm="2" md-cols-md="8" md-row-height-gt-md="2:2" md-row-height="4:4"
+					 md-gutter-gt-md="10px" md-gutter-md="4px">
+						<md-grid-tile md-colspan-gt-sm="4" ng-click="visualizar_categoria(1)" md-rowspan-gt-sm="2" width="100%" amor><text
+							 text>Amor</text></md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" ng-click="visualizar_categoria(2)" md-rowspan-gt-sm="2" width="100%" buena-suerte><text
+							 text>Buena Suerte</text></md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" ng-click="visualizar_categoria(3)" md-rowspan-gt-sm="2" width="100%" proteccion><text
+							 text>Proteccion</text></md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" ng-click="visualizar_categoria(4)" md-rowspan-gt-sm="2" width="100%" energia><text
+							 text>Energía</text></md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" md-rowspan-gt-sm="2" width="100%">
+							<md-card hide-md layout-fill logo-2></md-card>
+							<md-card show-md hide-lg hide-xl layout-fill mistico ng-click="visualizar_categoria(8)"> <text text>Místicas</text>
+								</md-card>
+						</md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" md-rowspan-gt-sm="2" width="100%" aire ng-click="visualizar_categoria(5)"><text
+							 text>Purificación</text></md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" md-rowspan-gt-sm="2" width="100%" aromatico ng-click="visualizar_categoria(6)"><text
+							 text>Aromáticas</text></md-grid-tile>
+						<md-grid-tile md-colspan-gt-sm="4" md-rowspan-gt-sm="2" width="100%" exotico ng-click="visualizar_categoria(7)"><text
+							 text>Exóticas</text></md-grid-tile>
+						<md-grid-tile hide-md md-colspan-gt-sm="4" md-rowspan-gt-sm="2" width="100%" mistico ng-click="visualizar_categoria(8)"><text
+							 text>Místicas</text></md-grid-tile>
+					</md-grid-list>
+				</md-content>
+			</section>
+
+			<!-- Nosotros - Quiénes somos / Misión / Visión -->
+			<section seccion-2>
+				<md-content layout-fill seccionamiento hide-xs hide-sm>
+					<img src="imgs/image-home-1.png" image-home-1 uib-popover-template="popoverdinamico1.templateUrl" popover-placement="top"
+					/>
+					<script type="text/ng-template" id="popover1.html">
+					   <md-content layout-fill justificar>
+					   <h3 style="font-family: 'Raleway', sans-serif;">¿Quiénes somos?</h3>
+						   En Sense a Plant Ofrecemos a nuestros clientes una opción diferente de adquirir una planta en la cual les mostremos que lo tangible y lo intangible deben estar en equilibrio. Nosotros no buscamos fechas especiales para hacer regalos… buscamos personas especiales a quien regalar.  Nuestras plantas, además de ser preciosas y alegrarnos la vida con sus colores y formas, están cargadas de energías que nos transmiten y que también nosotros podemos transmitir a través y por medio de ellas.
+					   </md-content>
+					</script>
+
+					<img src="imgs/image-home-2.png" image-home-2 uib-popover-template="popoverdinamico2.templateUrl" popover-placement="bottom"
+					/>
+					<script type="text/ng-template" id="popover2.html">
+					   <md-content layout-fill justificar>
+					   <h3 style="font-family: 'Raleway', sans-serif;">Misión</h3>
+							   En Sense a Plant ofrecemos la venta de plantas totalmente personalizadas y cargadas de vibras positivas que llenan nuestro hogar de aromas, formas y colores; no buscamos fechas especiales para hacer regalos… buscamos personas especiales a quien regalar.
+					   </md-content>
+					</script>
+
+					<img src="imgs/image-home-3.png" image-home-3 uib-popover-template="popoverdinamico3.templateUrl" popover-placement="top"
+					/>
+					<script type="text/ng-template" id="popover3.html">
+					   <md-content layout-fill justificar>
+					   <h3 style="font-family: 'Raleway', sans-serif;">Visión</h3>
+							   Lograr posicionamiento y reconocimiento de nuestra marca  basados en la calidad y el servicio que ofrecemos, factores clave para impulsar y compartir nuestro estilo propio de empresa, convirtiéndolo así en un concepto franquiciable. 
+					   </md-content>
+					</script>
+				</md-content>
+				<md-content hide-md hide-lg hide-gt-lg>
+					<div class="spaceTool"></div>
+					<md-content hide-md hide-lg hide-gt-lg style="background-color: transparent;" centrado>
+						<md-grid-list md-cols="1" md-cols-sm="1" md-row-height="2:1" md-gutter-sm="0px">
+							<md-grid-tile>
+								<div layout="row" layout-align="center center">
+									<div flex class="centrar">
+										<img src="imgs/image-home-1.png" width="100%">
+									</div>
+									<div flex justificar>
+										<texto-pasos>
+											<h4 style="font-family: 'Raleway', sans-serif;">¿Quiénes somos?</h4>
+											En Sense a Plant Ofrecemos a nuestros clientes una opción diferente de adquirir una planta en la cual les mostremos que lo
+											tangible y lo intangible deben estar en equilibrio. Nosotros no buscamos fechas especiales para hacer regalos…
+										</texto-pasos>
+									</div>
+								</div>
+							</md-grid-tile>
+							<md-grid-tile>
+								<div layout="row" layout-align="center center">
+									<div flex class="centrar">
+										<img src="imgs/image-home-2.png" width="100%">
+									</div>
+									<div flex justificar>
+										<texto-pasos>
+											<h4 style="font-family: 'Raleway', sans-serif;">Misión</h4>
+											En Sense a Plant ofrecemos la venta de plantas totalmente personalizadas y cargadas de vibras positivas que llenan nuestro
+											hogar de aromas, formas y colores; no buscamos fechas especiales para hacer regalos… buscamos personas especiales
+											a quien regalar.
+										</texto-pasos>
+									</div>
+								</div>
+							</md-grid-tile>
+							<md-grid-tile>
+								<div layout="row" layout-align="center center">
+									<div flex class="centrar">
+										<img src="imgs/image-home-3.png" width="100%">
+									</div>
+									<div flex justificar>
+										<texto-pasos>
+											<h4 style="font-family: 'Raleway', sans-serif;">Visión</h4>
+											Lograr posicionamiento y reconocimiento de nuestra marca basados en la calidad y el servicio que ofrecemos, factores clave
+											para impulsar y compartir nuestro estilo propio de empresa, convirtiéndolo así en un concepto franquiciable.
+										</texto-pasos>
+									</div>
+								</div>
+							</md-grid-tile>
+						</md-grid-list>
+					</md-content>
+				</md-content>
+			</section>
+
+			<!-- Información -->
+			<section seccion-4 ng-show="!loggedin">
+				<div style="background-color: #3ab44a;" class="spaceTool"></div>
+				<div hide-xs hide-sm style="background-color: #3ab44a" class="spaceTool"></div>
+				<div hide-xs hide-sm style="background-color: #3ab44a" class="spaceTool"></div>
+				<div hide-xs hide-sm style="background-color: #3ab44a" class="spaceTool"></div>
+				<div layout="row" titulo-seccion-4 layout-align="center center">
+					<div>
+						¡Regístrate ya y obtén los siguientes beneficios!
+					</div>
+				</div>
+				<md-content style="background-color: transparent;" centrado-lista>
+					<md-grid-list md-cols="1" md-cols-xs="1" md-row-height-xs="10:3" md-cols-sm="2" md-row-height-sm="4:3" md-cols-lg="3" md-row-height-lg="5:3"
+					 md-cols-gt-lg="3" md-row-height-gt-lg="5:3" md-cols-md="2" md-row-height-md="4:2">
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex="40" class="centrar">
+									<img src="imgs/listas/regalar.png" imagen-lista>
+								</div>
+								<div flex="60" justificar>
+									<texto-pasos>Regalar Sense a Plant a tus seres queridos.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex="40" class="centrar">
+									<img src="imgs/listas/colocar.png" imagen-lista>
+								</div>
+								<div flex="60" justificar>
+									<texto-pasos>Tips para colocar tu planta en el mejor lugar y lograr tu entorno armónico.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex="40" class="centrar">
+									<img src="imgs/listas/comprar.png" imagen-lista>
+								</div>
+								<div flex="60" justificar>
+									<texto-pasos>Ofrece Sense a plant entre tus conocidos (Amigos, vecino, compañeros trabajo) y obtén ganancias.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex="40" class="centrar">
+									<img src="imgs/listas/entorno.png" imagen-lista>
+								</div>
+								<div flex="60" justificar>
+									<texto-pasos>Conoce To Sense para maximizar el poder ambiental de tu planta.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex="40" class="centrar">
+									<img src="imgs/listas/comunidad.png" imagen-lista>
+								</div>
+								<div flex="60" justificar>
+									<texto-pasos>Forma parte de la comunidad Sense a Plant y compartir experiencias.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex="40" class="centrar">
+									<img src="imgs/listas/cuidar.png" imagen-lista>
+								</div>
+								<div flex="60" justificar>
+									<texto-pasos>Tips para cuidar tu planta.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+					</md-grid-list>
+				</md-content>
+			</section>
+
+			<!-- Instrucciones de compra de plantas -->
+			<section seccion-3>
+				<div hide-xs hide-sm style="background-color: #3ab44a" class="spaceTool"></div>
+				<div hide-xs hide-sm style="background-color: #3ab44a" class="spaceTool"></div>
+				<div hide-xs hide-sm style="background-color: #3ab44a" class="spaceTool"></div>
+				<div layout="row" titulo-seccion-4 layout-align="center center">
+					<div>
+						Para obtener tu Sense a PLANT.
+					</div>
+				</div>
+				<div hide-xs hide-sm hide-md hide-lg class="spaceTool"></div>
+				<md-content hide-md hide-lg hide-gt-lg style="background-color: transparent;" centrado>
+					<md-grid-list md-cols="1" md-cols-sm="1" md-row-height="15:6" md-gutter-sm="0px">
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-01.png" style="width: 70%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>1</text><br>
+									<texto-pasos>Revisa el catálogo de plantas y selecciona la que más te guste.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-02.png" style="width: 70%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>2</text><br>
+									<texto-pasos>Acude a la sucursal más cercana para realizar tu compra.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-03.png" style="width: 70%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>3</text><br>
+									<texto-pasos>Comienza la experiencia de Sense A Plant, comprando cualquier de nuestros productos.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-04.png" style="width: 70%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>4</text><br>
+									<texto-pasos>Dale los cuidados que necesite a tu planta.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+					</md-grid-list>
+				</md-content>
+				<md-content hide-xs hide-sm style="background-color: transparent;" centrado>
+					<md-grid-list md-cols="2" md-cols-gt-md="2" md-cols-gt-lg="2" md-row-height="10:5" md-gutter-gt-md="50px" md-gutter-gt-lg="50px">
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-01.png" style="width: 90%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>1</text><br>
+									<texto-pasos>Revisa el catálogo de plantas y selecciona la que más te guste.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-02.png" style="width: 90%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>2</text><br>
+									<texto-pasos>Acude a la sucursal más cercana para realizar tu compra.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-03.png" style="width: 90%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>3</text><br>
+									<texto-pasos>Comienza la experiencia de Sense A Plant, comprando cualquier de nuestros productos.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+						<md-grid-tile>
+							<div layout="row" layout-align="center center">
+								<div flex class="centrar">
+									<img src="imgs/pasos/gift-04.png" style="width: 90%;">
+								</div>
+								<div flex justificar>
+									<text numero-paso>4</text><br>
+									<texto-pasos>Dale los cuidados que necesite a tu planta.</texto-pasos>
+								</div>
+							</div>
+						</md-grid-tile>
+					</md-grid-list>
+				</md-content>
+			</section>
+
+			<!-- Crear una cuenta -->
+			<section seccion-5 centrado-lista ng-show="!loggedin">
+				<div class="spaceTool" hide-sm hide-xs></div>
+				<div class="spaceTool" hide-sm hide-xs></div>
+				<div class="spaceTool" hide-sm hide-xs></div>
+				<div class="spaceTool"></div>
+				<div class="spaceTool"></div>
+				<div layout="row" layout-align="center center">
+					<div flex class="centrar" hide-sm hide-xs>
+						<img src="imgs/imagen-texto-5.png" width="80%">
+					</div>
+					<div flex justificar>
+						<md-content centrado fuente flex="" layout="row" layout-padding="" style="background-color: transparent;">
+							<div layout="column" ng-cloak="" layout-fill class="main md-inline-form">
+								<!-- Datos de registro-->
+								<form name="formRegistro">
+									<div layout-gt-sm="row">
+										<!-- Nombre (s) -->
+										<md-input-container class="md-block" flex-gt-sm="">
+											<label>Nombre (s)</label>
+											<md-icon md-svg-src="imgs/icons/ic_account_box_black_24px.svg"></md-icon>
+											<input required name="nombre" ng-model="datos.nombre">
+											<div ng-messages="formRegistro.nombre.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+												<div ng-message="required">
+													Ingresa tu nombre.
+												</div>
+											</div>
+										</md-input-container>
+									</div>
+
+									<div layout-gt-sm="row">
+										<!-- Correo -->
+										<md-input-container class="md-block" flex-gt-sm="">
+											<label>Correo electrónico</label>
+											<md-icon md-svg-src="imgs/icons/ic_contact_mail_black_24px.svg"></md-icon>
+											<input required name="correo_electronico" ng-model="datos.correo_electronico">
+											<div ng-messages="formRegistro.correo_electronico.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+												<div ng-message="required">
+													Ingresa un correo electrónico.
+												</div>
+											</div>
+										</md-input-container>
+									</div>
+
+									<div layout-gt-sm="row">
+										<!-- * Contraseña -->
+										<md-input-container class="md-block" flex-gt-xs="">
+											<label>Contraseña</label>
+											<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+											<input type="password" required name="contrasena" ng-pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/" ng-model="datos.contrasena">
+											<div ng-messages="formRegistro.contrasena.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+												<div ng-message="required">
+													Se requiere una contraseña.
+												</div>
+												<div ng-message="pattern">
+													La contraseña debe tener 8 o más caracteres, al menos un número, una letra mayúscula y una minúscula.
+												</div>
+											</div>
+										</md-input-container>
+									</div>
+									<div layout-gt-sm="row">
+										<!-- * Repetir contraseña -->
+										<md-input-container class="md-block" flex-gt-xs="">
+											<label>Repetir contraseña</label>
+											<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+											<input type="password" required name="repetir_contrasena" same-as="datos.contrasena" ng-model="datos.repetir_contrasena">
+											<div ng-messages="formRegistro.repetir_contrasena.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+												<div ng-message="required">
+													Campo obligatorio
+												</div>
+												<div ng-message="same-as">
+													Las contraseñas no coinciden
+												</div>
+											</div>
+										</md-input-container>
+									</div>
+									<div layout="row">
+										<div flex layout="row" layout-align="end top">
+											<md-button class="md-raised md-primary" ng-click="registrar()">Registrarse</md-button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</md-content>
+					</div>
+				</div>
+			</section>
+		</md-content>
+
+	</div>
+
+	<div class="footer">
+
+		<dir-footer></dir-footer>
+
+	</div>
+
+</div>

@@ -1,0 +1,97 @@
+
+<md-toolbar hide-sm hide-xs scroll class="md-tall">
+    <form name="formSearch" ng-submit="mostrarPlanta(selectedItem)">
+        <div class="md-toolbar-tools" ng-show="!showSearch">
+            <md-button ng-click="showSearch = !showSearch" class="md-icon-button" aria-label="Back">
+                <md-icon md-svg-src="imgs/icons/back_white_24px.svg"></md-icon>
+            </md-button>
+            <md-autocomplete style="color: black;" flex md-selected-item="selectedItem" md-search-text-change="searchTextChange(buscar.planta)"
+                md-search-text="buscar.planta" md-selected-item-change="selectedItemChange(item)" md-items="item in plantas | filter:buscar.planta"
+                md-item-text="item.nombre_planta" md-min-length="0" placeholder="Buscar planta..." md-menu-class="autocomplete-custom-template">
+                <md-item-template>
+                    <span class="item-title">
+                        <img ng-src="{{item.imagen}}" width="5%">
+                        <span> {{item.nombre_planta}} -</span>
+                    </span>
+                    <span class="item-metadata">
+                        <span class="item-metastat">
+                            <strong>{{item.categoria}}</strong>
+                        </span>
+                    </span>
+                </md-item-template>
+            </md-autocomplete>
+            <md-button type="submit" aria-label="Search" ng-click="mostrarPlanta(selectedItem)">
+                <md-icon md-svg-src="imgs/icons/search_white_48px.svg"></md-icon>
+            </md-button>
+        </div>
+    </form>
+    <div class="md-toolbar-tools" ng-show="showSearch">
+        <md-button aria-label="Search" ng-click="showSearch = !showSearch" class="md-icon-button">
+            <md-icon md-svg-src="imgs/icons/search_white_48px.svg"></md-icon>
+        </md-button>
+        <span flex>Sense a PLANT</span>
+        <md-button aria-label="Facebook" class="md-icon-button" ng-href="https://www.facebook.com/" target="_blank">
+            <md-icon md-svg-src="imgs/icons/facebook_circle_white.svg"></md-icon>
+        </md-button>
+        <md-button aria-label="Instagram" class="md-icon-button" ng-href="https://www.instagram.com/senseaplant/" target="_blank">
+            <md-icon md-svg-src="imgs/icons/instagram_circle_white.svg"></md-icon>
+        </md-button>
+        <md-menu class="md-primary">
+            <md-button aria-label="menuHome1" class="md-icon-button" ng-click="$mdOpenMenu()">
+                <md-icon ng-show="!loggedin" md-svg-src="imgs/icons/more_vert_white_48px.svg"></md-icon>
+                <md-icon ng-show="loggedin" md-svg-src="imgs/icons/ic_account_circle_white_24px.svg"></md-icon>
+            </md-button>
+            <md-menu-content width="5">
+                <md-menu-item ng-show="!loggedin">
+                    <md-button aria-label="menuHome1" ng-click="iniciar()">
+                        <md-icon md-svg-src="imgs/icons/person_24px.svg"></md-icon>
+                        Iniciar Sesión
+                    </md-button>
+                </md-menu-item>
+                <md-menu-item ng-show="loggedin">
+                    <md-button aria-label="menuHome1" ng-click="cerrar()">
+                        <md-icon md-svg-src="imgs/icons/ic_power_settings_new_black_24px.svg"></md-icon>
+                        Cerrar Sesión
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+    </div>
+    <span layout="row">
+        <md-button tab-full layout-fill ng-click="goToHome()">I n i c i o</md-button>
+
+        <md-menu layout-fill>
+            <!-- Trigger element is a md-button with an icon -->
+            <md-button ng-click="$mdOpenMenu($event)" tab-full layout-fill aria-label="Open sample menu"> T o &nbsp;&nbsp;
+                s e n s e</md-button>
+            <md-menu-content width="4">
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Amor')"> A M O R</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Buena Suerte')"> B U E N A &nbsp;&nbsp; S U E R T E</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Protección')"> P R O T E C C I Ó N </md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Energía')"> E N E R G Í A</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Purifica Aire')"> P U R I F I C A C I Ó N</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Aromática')"> A R O M Á T I C A</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Exótica')"> E X Ó T I C A</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button ng-click="visualizar_categoria('Mística')"> M Í S T I C A</md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+        <md-button layout-fill ng-click="goToCuidados()" tab-full>c u i d a d o s</md-button>
+        <md-button layout-fill ng-click="goToContactanos()" tab-full>c o n t á c t a n o s</md-button>
+    </span>
+</md-toolbar>

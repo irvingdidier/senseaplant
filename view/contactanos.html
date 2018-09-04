@@ -1,0 +1,148 @@
+<div class="wrapper">	
+	<div class="content">
+		<div>
+
+			<!-- Toolbar Desktop -->
+			<dir-toolbar-desk></dir-toolbar-desk>
+
+
+			<!-- Toolbar móvil y sidenav-->
+			<dir-toolbar-movil></dir-toolbar-movil>
+
+			<md-content centrarContent>
+				<div hide-sm hide-xs class="spaceTool"></div><div hide-sm hide-xs class="spaceTool"></div><div hide-sm hide-xs class="spaceTool"></div>
+					<div hide-sm hide-xs class="md-whiteframe-6dp" layout="row" layout-fill>
+						<div style="width: 50%; float: left;">
+							<div layout="column" centrarContent>
+								<br/>
+								<img src="imgs/img-map-desk.png" width="100%">
+						      	</ng-map> -->
+							</div>
+							<div layout="column" centrarContent><br/><br/>
+								<p><label>Dirección:</label> 5 de mayo 408, Centro, San Pedro Cholula, Puebla.</p>
+								<p><label>Número telefónico:</label> (222) 247 2949</p>
+								<p><label>Whatsapp:</label> (222) 863-2850 </p>
+								<p><label>Correo electrónico:</label> senseaplant@gmail.com</p>
+							</div>
+						</div>
+						<div style="width: 50%; float: left;" flex="50" centrarContent>
+							<h1>Contáctanos</h1>
+							<div class="spaceTool"></div>
+							<form ng-submit="enviarMensaje(formContact1)" name="formContact1">
+								<md-input-container layout-fill class="md-block">
+									<label>Nombre completo</label>
+									<md-icon md-svg-src="imgs/icons/ic_account_box_black_24px.svg"></md-icon>
+									<input required type="text" ng-model="contacto.nombre" name="nombre">
+									<div ng-messages="formContact1.nombre.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+							        	<div ng-message="required">
+							            	Ingresa tu nombre completo.
+							          	</div>
+							        </div>
+								</md-input-container>
+								<br/>
+								<md-input-container layout-fill class="md-block">
+									<label>Correo electrónico</label>
+									<md-icon md-svg-src="imgs/icons/ic_contact_mail_black_24px.svg"></md-icon>
+									<input required type="mail" ng-model="contacto.correo" name="mail">
+									<div ng-messages="formContact1.mail.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+							        	<div ng-message="required">
+							            	Ingresa tu correo electrónico.
+							          	</div>
+							        </div>
+								</md-input-container>
+								<br/>
+								<md-input-container layout-fill class="md-block">
+									<label>Mensaje</label>
+									<md-icon md-svg-src="imgs/icons/ic_description_black_24px.svg"></md-icon>
+									<textarea required ng-model="contacto.mensaje" md-maxlength="700" rows="5" name="area"></textarea>
+									<div ng-messages="formContact1.area.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+							        	<div ng-message="required">
+							            	Ingresa el mensaje a enviar.
+							          	</div>
+							        </div>
+								</md-input-container>
+								<br/>
+								<div layout="row" layout-phone="column" ng-show="progress" layout-align="space-around">
+									<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+							    </div>
+								<br/>
+								<md-button class="md-raised md-primary" ng-disabled="progress" layout-fill ng-click="enviarMensaje(formContact1)">Enviar</md-button>
+							</form>
+							<br/>
+						</div>
+					</div>
+
+					<div class="spaceTool"></div>
+
+					<md-card hide-md hide-gt-md>
+						<img src="imgs/img-map-movil.png" width="100%">
+			        	<md-card-title>
+			          		<md-card-title-text>
+			            		<span class="md-headline">Sense a PLANT</span>
+			          		</md-card-title-text>
+			        	</md-card-title>
+			        	<md-card-content>
+			          		<p><label>Dirección:</label> 5 de mayo 408, Centro, San Pedro Cholula, Puebla.</p>
+							<p><label>Número telefónico:</label> (222) 247 2949</p>
+							<p><label>Whatsapp:</label> (222) 863-2850 </p>
+							<p><label>Correo electrónico:</label> senseaplant@gmail.com</p>
+			        	</md-card-content>
+				        <md-card-actions layout="column" layout-align="start">
+							<h4>Contáctanos</h4>
+							<div class="spaceTool"></div>
+							<form ng-submit="enviarMensaje(formContact1)" name="formContact1">
+								<md-input-container layout-fill class="md-block">
+									<label>Nombre completo</label>
+									<md-icon md-svg-src="imgs/icons/ic_account_box_black_24px.svg"></md-icon>
+									<input required type="text" ng-model="contacto.nombre" name="nombre">
+									<div ng-messages="formContact1.nombre.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+							        	<div ng-message="required">
+							            	Ingresa tu nombre completo.
+							          	</div>
+							        </div>
+								</md-input-container>
+								<br/>
+								<md-input-container layout-fill class="md-block">
+									<label>Correo electrónico</label>
+									<md-icon md-svg-src="imgs/icons/ic_contact_mail_black_24px.svg"></md-icon>
+									<input required type="mail" ng-model="contacto.correo" name="mail">
+									<div ng-messages="formContact1.mail.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+							        	<div ng-message="required">
+							            	Ingresa tu correo electrónico.
+							          	</div>
+							        </div>
+								</md-input-container>
+								<br/>
+								<md-input-container layout-fill class="md-block">
+									<label>Mensaje</label>
+									<md-icon md-svg-src="imgs/icons/ic_description_black_24px.svg"></md-icon>
+									<textarea required ng-model="contacto.mensaje" md-maxlength="700" rows="5" name="area"></textarea>
+									<div ng-messages="formContact1.area.$error" ng-if="showErrors" multiple="true" md-auto-hide="true">
+							        	<div ng-message="required">
+							            	Ingresa el mensaje a enviar.
+							          	</div>
+							        </div>
+								</md-input-container>
+								<br/>
+								<div layout="row" layout-phone="column" ng-show="progress" layout-align="space-around">
+									<!-- <md-progress-circular md-mode="indeterminate"></md-progress-circular> -->
+									<md-progress-linear md-mode="query"></md-progress-linear>
+							    </div>
+								<!-- <br/> -->
+								<md-button class="md-raised md-primary" ng-disabled="progress" layout-fill ng-click="enviarMensaje(formContact1)">Enviar</md-button>
+							</form>
+							<br/>
+				        </md-card-actions>
+			      	</md-card>
+				</div>
+			</md-content>
+			
+	</div>
+	
+	<div class="footer">
+
+		<dir-footer></dir-footer>
+
+	</div>
+
+</div>

@@ -1,0 +1,36 @@
+<div layout="column" layout-align="center center">
+	<img src="imgs/logo_correo.png" logo-form><br>
+	<div flex layout-fill contenedor-form>
+		<div class="centrar">
+			<label label-form><strong>Restablecer contraseña</strong></label><br>
+			Pon tu dirección de correo electrónico que usaste para registrarte en <stron>Sense a PLANT</stron>. Te enviaremos un mensaje con un enlace para restablecer tu contraseña.
+		</div>
+		<div class="spaceTool"></div>
+		<form name="formRes">
+			<md-input-container flex-gt-sm="" class="md-block">
+				<label>Ingrese su correo electrónico</label>
+				<md-icon md-svg-src="imgs/icons/ic_contact_mail_black_24px.svg"></md-icon>
+				<input required name="correo_electronico" ng-model="datos.correo_electronico">
+				<div ng-messages="formRes.correo_electronico.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+		        	<div ng-message="required">
+		            	Ingresa un correo electrónico.
+		          	</div>
+		        </div>
+			</md-input-container>
+
+			<div layout="row" layout-phone="column" ng-show="progress" layout-align="space-around">
+				<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+		    </div>
+
+			<div class="centrar" style="color:#009688"><label> {{resultado}} </label></div>
+			<div flex>
+				<div flex layout-align="end top" >
+					<md-button class="md-raised md-primary" ng-disabled="progress" layout-fill ng-click="enviarContra()">Restablecer</md-button>
+				</div>
+			</div>
+		</form>
+		<div class="centrar">
+			Si aún necesitas ayuda, ponte en contacto con nosotros <a href="contactanos">aquí</a>.
+		</div>
+	</div>
+</div>

@@ -1,0 +1,199 @@
+<div class="wrapper">	
+	<div class="content">
+		<div>
+			
+			<!-- Toolbar Desktop -->
+			<dir-toolbar-desk></dir-toolbar-desk>
+
+
+			<!-- Toolbar móvil y sidenav-->
+			<dir-toolbar-movil></dir-toolbar-movil>
+
+
+			<div hide-sm hide-xs class="spaceTool"></div><div hide-sm hide-xs class="spaceTool"></div><div hide-sm hide-xs class="spaceTool"></div>
+
+			<md-content centrarContent style="font-family: 'Raleway', sans-serif;">
+				<article>
+
+					<div class="md-whiteframe-6dp" layout="column" hide-sm hide-xs style="background: url(imgs/pasto-01.png); background-repeat: no-repeat; background-size: 100% 100%; padding-bottom: 10em !important;">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<md-button ng-click="back(planta.categoria)" class="md-icon-button" aria-label="back">
+						          	<md-icon md-svg-src="imgs/icons/back_black_24px.svg"></md-icon>
+						        </md-button>
+						        <span flex="" centrar></span>
+						        <img src="{{planta.icono}}" width="5%">
+								<h1 style="color: black; font-weight: bold; font-size: 180%;">{{planta.nombre_planta}}</h1>
+								<span flex></span>
+				       			<div class="fb-share-button" data-href="{{ urlHost }}/#/planta/{{planta.id_planta}}" data-layout="button"></div>
+							</div>
+						</md-toolbar>
+						<div class="spaceTool"></div>
+						<div layout="row" flex>
+							<div layout="column" flex="50" centrarContent style="padding-top: 20px;" layout-align="center center">
+
+								<div layout="column"><img ng-elevate-zoom ng-src="{{planta.imagen}}" zoom-image="{{planta.imagen_zoom}}"></div>
+
+							</div>
+							<div layout="column" flex="50" centrarContent style="padding-top: 20px;">
+				            	<p class="justificar" style="color: #93C45F"><strong>TO SENSE: </strong>{{planta.to_sense}}</p>
+					            <br/>
+								<p><strong>Nombre científico: </strong>{{planta.nombre_cientifico}}</p>
+								<p class="justificar"><strong>Descripción: </strong>{{planta.descripcion}}</p>
+								<br/>
+								<br/>
+								<p><strong>Cuidados:</strong>
+								<br/>
+									<div layout="row">
+										<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+							            	<img src="imgs/iconos_cuidados/luz.png" width="100%">
+							            </div>
+							            <div derechaPlanta layout="column" flex="90" class="justificar">
+						            		<p>
+							            		{{planta.luz}}
+							            	</p>
+						            	</div>
+					            	</div>
+						            <br/><md-divider style="background-color: #93C45F;"></md-divider><br/>
+						            <div layout="row">
+										<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+							            	<img src="imgs/iconos_cuidados/temperatura.png" width="100%">
+							            </div>
+							            <div derechaPlanta layout="column" flex="90" class="justificar">
+						            		<p>
+							            		{{planta.temperatura}}
+							            	</p>
+						            	</div>
+					            	</div>
+						            <br/><md-divider style="background-color: #93C45F;"></md-divider><br/>
+						            <div layout="row">
+										<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+							            	<img src="imgs/iconos_cuidados/riego.png" width="100%">
+							            </div>
+							            <div derechaPlanta layout="column" flex="90" class="justificar">
+						            		<p>
+							            		{{planta.riego}}
+							            	</p>
+						            	</div>
+					            	</div>
+						            <br/><md-divider style="background-color: #93C45F;"></md-divider><br/>
+						            <div layout="row">
+										<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+							            	<img src="imgs/iconos_cuidados/suelo.png" width="100%">
+							            </div>
+							            <div derechaPlanta layout="column" flex="90" class="justificar">
+						            		<p>
+							            		{{planta.suelo}}
+							            	</p>
+						            	</div>
+					            	</div>
+						            <br/>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div hide-md hide-gt-md>
+						<div class="spaceTool"></div>
+						<md-card style="background: url(imgs/pasto-01.png); background-repeat: no-repeat; background-position: bottom; background-size: 100% 70%; padding-bottom: 10em !important;">
+				        	<md-card-header>
+				        		<md-button ng-click="back(planta.categoria)" class="md-icon-button" aria-label="back">
+						          	<md-icon md-svg-src="imgs/icons/back_black_24px.svg"></md-icon>
+						        </md-button>
+				          		<md-card-avatar>
+				          			<img src="{{planta.icono}}" width="15%">
+				          		</md-card-avatar>
+					         	<md-card-header-text>
+					            	<span class="md-title"><strong>{{planta.nombre_planta}}</strong></span>
+					            	<span class="md-subhead">{{planta.nombre_cientifico}}</span>
+					          	</md-card-header-text>
+				        	</md-card-header>
+				        	<img ng-elevate-zoom ng-src="{{planta.imagen}}" class="md-card-image" data-zoom-image="{{planta.imagen_zoom}}">
+				       		<md-card-title layout-align="end end">
+				       			<div class="fb-send" data-href="{{ urlHost }}/#/planta/{{planta.id_planta}}"></div>
+								&nbsp;
+				       			<div class="fb-share-button" data-href="{{ urlHost }}/#/planta/{{planta.id_planta}}" data-layout="button"></div>
+				       			&nbsp;
+				       			<a ng-href="whatsapp://send?text={{url}}">
+					       			<div layout="row" class="whatsapp" ng-click="whatsapp(planta.id_planta)">
+										<div layout="column" layout-align="center center">
+							            	<img src="imgs/icons/whatsapp.png" style="width: 80%;">
+							            </div>
+							            <div layout="column" style="padding-top: 3px;">
+						            		<p>
+							            		Whatsapp
+							            	</p>
+						            	</div>
+					            	</div>
+					            </a>
+				        	</md-card-title>
+				        	<md-card-content>
+				        		<p class="justificar" style="color: #93C45F"><strong>TO SENSE: </strong>{{planta.to_sense}}</p>
+				        		<p class="justificar"><strong>Descripción: </strong>{{planta.descripcion}}</p>
+				        		<br/>
+					          	<p><strong>Cuidados:</strong>
+									<br/>
+										<div layout="row">
+											<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+								            	<img src="imgs/iconos_cuidados/luz.png" width="100%">
+								            </div>
+								            <div derechaPlanta layout="column" flex="90" class="justificar">
+							            		<p>
+								            		{{planta.luz}}
+								            	</p>
+							            	</div>
+						            	</div>
+							            <br/><md-divider style="background-color: #93C45F;"></md-divider><br/>
+							            <div layout="row">
+											<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+								            	<img src="imgs/iconos_cuidados/temperatura.png" width="100%">
+								            </div>
+								            <div derechaPlanta layout="column" flex="90" class="justificar">
+							            		<p>
+								            		{{planta.temperatura}}
+								            	</p>
+							            	</div>
+						            	</div>
+							            <br/><md-divider style="background-color: #93C45F;"></md-divider><br/>
+							            <div layout="row">
+											<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+								            	<img src="imgs/iconos_cuidados/riego.png" width="100%">
+								            </div>
+								            <div derechaPlanta layout="column" flex="90" class="justificar">
+							            		<p>
+								            		{{planta.riego}}
+								            	</p>
+							            	</div>
+						            	</div>
+							            <br/><md-divider style="background-color: #93C45F;"></md-divider><br/>
+							            <div layout="row">
+											<div izquierdaPlanta layout="column" flex="10" layout-align="center center">
+								            	<img src="imgs/iconos_cuidados/suelo.png" width="100%">
+								            </div>
+								            <div derechaPlanta layout="column" flex="90" class="justificar">
+							            		<p>
+								            		{{planta.suelo}}
+								            	</p>
+							            	</div>
+						            	</div>
+							        <br/>
+								</p>
+				        	</md-card-content>
+				      	</md-card>
+					</div>
+
+					<br hide-sm hide-xs/>
+
+				</article>
+			</md-content>
+
+		</div>
+	</div>
+	
+	<div class="footer">
+
+		<dir-footer></dir-footer>
+
+	</div>
+
+</div>

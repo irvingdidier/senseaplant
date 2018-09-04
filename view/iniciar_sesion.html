@@ -1,0 +1,62 @@
+<!--
+		view: login_postulantes.html
+-->
+
+<md-dialog aria-label="Iniciar Sesion" layout="column" flex="40" ng-cloak="" class="md-inline-form">
+	<form name="loginForm">
+    	<md-toolbar style="background-color:#291C14">
+      		<div class="md-toolbar-tools">
+	        	<h2>Iniciar Sesión</h2>
+	        	<span flex></span>
+	        	<md-button class="md-icon-button" ng-click="cancel()">
+	        		<md-icon md-svg-src="imgs/icons/clear_white_24px.svg" aria-label="Close dialog"></md-icon>
+	        	</md-button>
+      		</div>
+    	</md-toolbar>
+
+
+    	<md-dialog-content>
+	      	<div class="md-dialog-content">
+
+		        <md-input-container class="md-icon-float md-block">
+                	<label>Correo Electrónico</label>
+                	<md-icon md-svg-src="imgs/icons/mail_black_24px.svg"></md-icon>
+                	<input type="email" autofocus="true" required name="name" ng-model="login.correo_electronico">
+                	<div ng-messages="loginForm.name.$error" multiple="" md-auto-hide="true" ng-if="showErrors">
+					   	<div ng-message="required">
+					       	Campo obligatorio
+					   	</div>
+					</div>
+             	</md-input-container>
+
+             	<md-input-container class="md-icon-float md-block">
+                	<label>Contraseña</label>
+                	<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+                	<input type="password" required name="pass" ng-model="login.contrasena">
+                	<div ng-messages="loginForm.pass.$error" multiple="" md-auto-hide="true" ng-if="showErrors">
+					   	<div ng-message="required">
+					       	Campo obligatorio
+					   	</div>
+					</div>
+             	</md-input-container>
+
+             	<br>
+			    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+			    	<label style="color:#009688">{{ resultado }}</label>
+			    </section>
+			    <br>
+             	<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+					<md-button type="submit" ng-click="enviar()" layout-fill class="md-raised md-primary">Ingresar</md-button>
+					<br>
+					<label><a href="restablecer_contrasena">¿Olvidaste tu contraseña?</a></label>&nbsp;
+					<label>¿No tienes cuenta? <a ng-click="registro()">Regístrate.</a></label>
+				</section>
+				<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+				</section>
+	      	</div>
+    	</md-dialog-content>
+  </form>
+</md-dialog>
+
+
+

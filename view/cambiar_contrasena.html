@@ -1,0 +1,43 @@
+<div layout="column" layout-align="center center">
+	<img src="imgs/logo_correo.png" logo-form>
+	<div flex layout-fill contenedor-form>
+		<div class="centrar">
+			<h3><strong>Restablecer contraseña</strong></h3>
+		</div>
+		<div class="spaceTool"></div>
+		<form name="formRes">
+			<md-input-container flex-gt-sm="" class="md-block">
+				<label>Ingrese su nueva contraseña</label>
+				<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+				<input type="password" required name="contrasena" ng-model="datos.contrasena" ng-pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/">
+				<div ng-messages="formRes.contrasena.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+		        	<div ng-message="required">
+		            	Ingresa una contraseña.
+		          	</div>
+		          	<div ng-message="pattern">
+				   		La contraseña debe tener 8 o más caracteres, al menos un número, una letra mayúscula y una minúscula.
+				   	</div>
+		        </div>
+			</md-input-container>
+			<md-input-container flex-gt-sm="" class="md-block">
+				<label>Repita la nueva contraseña</label>
+				<md-icon md-svg-src="imgs/icons/lock_black_24px.svg"></md-icon>
+				<input type="password" required name="r_contrasena" ng-model="datos.r_contrasena" same-as="datos.contrasena" ng-pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/">
+				<div ng-messages="formRes.r_contrasena.$error" ng-if="showErrors" multiple="" md-auto-hide="true">
+		        	<div ng-message="required">
+		            	Ingresa una contraseña.
+		          	</div>
+		          	<div ng-message="same-as">
+				       	Las contraseñas no coinciden
+				   	</div>
+		        </div>
+			</md-input-container>
+			<div class="centrar" style="color:#009688"><label> {{resultado}} </label></div>
+			<div flex>
+				<div flex layout-align="end top" >
+					<md-button class="md-raised md-primary" layout-fill ng-click="cambiarContra()">Restablecer</md-button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

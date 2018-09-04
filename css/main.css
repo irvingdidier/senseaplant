@@ -1,0 +1,738 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+  font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+	min-height:100%;
+	position:relative;
+}
+.header {
+	padding:10px;
+}
+.content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+.footer {
+	background:#444b5d;
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.divFooterTop{
+	padding-top: 20px;	
+	height:85px;
+	color:291C14;
+	font-size: 90%;
+}
+.divFooterBottom{
+	height:19px;
+	background-color:black;
+	color:white;
+	font-size: 70%;
+}
+
+.hint {
+    /* Position the hint */
+    position: absolute;
+    left: 2px;
+    right: auto;
+    bottom: 7px;
+    /* Copy styles from ng-messages */
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    /* Set our own color */
+    color: gray; }
+  .inputdemoErrorsAdvanced .hint.ng-hide,
+  .inputdemoErrorsAdvanced .hint.ng-enter,
+  .inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active {
+    bottom: 26px;
+    opacity: 0; }
+  .inputdemoErrorsAdvanced .hint.ng-leave,
+  .inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active {
+    bottom: 7px;
+    opacity: 1;
+}
+.hintError {
+    /* Position the hint */
+    position: absolute;
+    left: 2px;
+    right: auto;
+    bottom: 7px;
+    /* Copy styles from ng-messages */
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    /* Set our own color */
+    color: red; }
+  .inputdemoErrorsAdvanced .hint.ng-hide,
+  .inputdemoErrorsAdvanced .hint.ng-enter,
+  .inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active {
+    bottom: 26px;
+    opacity: 0; }
+  .inputdemoErrorsAdvanced .hint.ng-leave,
+  .inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active {
+    bottom: 7px;
+    opacity: 1;
+}
+
+md-sidenav
+{
+  position:fixed !important;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+  font-size: 20px;
+}
+
+.centrar{
+  text-align: center !important;
+}
+
+[centrado]{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+[tab-full]:hover{
+  font-size: 100% !important;
+  color: #1B5E20 !important;
+  background-color: #3AB44A !important;
+}
+
+/******************************************************
+********************   ALINEACION  ********************
+******************************************************/
+
+.centrar{
+  text-align: center !important;
+}
+.justificar{
+  text-align: justify !important;
+}
+.derecha{
+  margin: 10px 17%;
+  display: inline-block;
+}
+.izquierda{
+  margin-top: 0px;
+  display: inline-block ;
+}
+[derechaPlanta]{
+  float: right!important;
+  padding-left: 10px;
+}
+[izquierdaPlanta]{
+  float: left !important;
+} 
+[justificar] {
+  text-align: justify !important;
+}
+
+/***************************************************
+****************    TARJETAS   *********************
+***************************************************/
+
+[share]{
+  display: inline-block !important;
+  list-style-type: none;
+  margin-top: 10px;
+}
+[izquierda]{
+  float: left;
+  display: inline-block;
+  margin-left: 20px !important;
+}
+[derecha]{
+  float: right;
+  display: inline-block;
+  margin-right: 20px !important;
+}
+[titulo]{
+  font-size: 180%;
+  text-align: center;
+  font-weight: bold;
+}
+[subtitulo]{
+  font-size: 120%;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+[contenido]{
+  width: 100%;
+  align-content:  center !important;
+  margin-bottom: 10%;
+}
+
+[tarjeta-imagen]{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+/************ TO SENSE *****************/
+[categoria]{
+  width: 80%;
+}
+[categoria]:hover{
+  width: 80%;
+  cursor: pointer;
+}
+
+[nombre-categoria]:hover{
+  color: #1a765f;
+  cursor: pointer;
+}
+[nombre-categoria]{
+  color: #291C14;
+  position:absolute; /*El div será ubicado con relación a la pantalla*/
+  left:0px; /*A la derecha deje un espacio de 0px*/
+  right:0px; /*A la izquierda deje un espacio de 0px*/
+  bottom:0px; /*Abajo deje un espacio de 0px*/
+  z-index:0;
+  font-size: 20px;
+}
+/*************** Fin To Sense **************/
+[pie]{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+[pie] md-icon {
+  display: table-cell;
+  text-align: center;
+}
+
+/***************************************************
+**********************     SECCIONES    ************
+***************************************************/
+
+[seccionamiento]{
+  background-image: url(../imgs/madera.png);
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+[subheader]{
+  font-size: 20px;
+  color: #291c14;
+  top: 2px;
+  font-style: italic;
+}
+
+[scroll] {
+  background-image: url(../imgs/header.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position:fixed;
+  top:0;
+  box-shadow: 0px 0px 10px black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.spaceTool{
+  padding-top: 50px;
+}
+
+.bottomTool{
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: rgba(255,255,255,.5);
+}
+
+.fabHome{
+  box-sizing: border-box;
+  position: fixed;
+  white-space: nowrap;
+  z-index: 0;
+  padding-left: 0;
+  list-style: none;
+  right: 0;
+  top: 64px;
+}
+
+[h1Home]{
+  font-size: 400%;
+  color: #1A765F !important;
+  text-align: justify;
+  font-weight: bold;
+}
+
+[pHome]{
+  font-size: 130%;
+  color: #291C14 !important;
+}
+
+[centrarContent]{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+[mapa]{
+  height: 450px;
+}
+
+[contactanos]{
+  width: 25%;
+  height: 70px;
+  font-size: 20px;
+  background-color: #291C14;
+  font-weight: bold;
+  color: white !important;
+}
+
+[contactanos]:hover{
+  background-color: #1A765F !important;
+  font-weight: bold;
+  color: white !important;
+}
+
+@keyframes slide {
+  0% {
+    left: 0px;
+    top: -100%;
+  }
+  50% {
+    left: 0px;
+    top: -50%;
+  }
+  100% {
+    left: 0px;
+    top: 0%;
+  }
+}
+.stage:hover .ball {
+  animation: slide 2s linear;
+}
+
+.drop-box {
+
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 2s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 2s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-1000%);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-1000%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-1000%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+[compartir]{
+    position:fixed; 
+    bottom: 0px;top:auto;
+  right: 0px;
+  }
+
+div ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style-image: url(../imgs/imagen-lista.png);
+}
+li { 
+    margin-bottom: 11px;
+    font-family: 'Raleway', sans-serif;
+}
+
+[encabezado]{
+  font-family: 'Raleway', sans-serif;
+  background-color: #3ab44a;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+[fuente]{
+  font-size:20px;
+}
+[pasos-2]{
+  width: 100%;
+  height: 60%;
+}
+
+/***************************************************
+*****************   SECCION 1  *********************
+***************************************************/
+
+[seccion-1] {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*********  CATEGORIAS  *************/
+
+/*AMOR */ 
+[amor]{
+  background-image: url(../imgs/amor.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[amor]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/back.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+/* BUENA SUERTE */
+
+[buena-suerte]{
+  background-image: url(../imgs/buena-suerte.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[buena-suerte]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/buena-suerte-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/* PROTECCION */
+
+[proteccion]{
+  background-image: url(../imgs/proteccion.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[proteccion]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/proteccion-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/* Energia */
+
+[energia]{
+  background-image: url(../imgs/energia.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[energia]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/energia-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/* aire */
+
+[aire]{
+  background-image: url(../imgs/aire.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[aire]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/aire-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/* aromatico */
+
+[aromatico]{
+  background-image: url(../imgs/aromatico.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[aromatico]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/aromatico-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/* exotico */
+
+[exotico]{
+  background-image: url(../imgs/exotico.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[exotico]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/exotico-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/* mistico */
+
+[mistico]{
+  background-image: url(../imgs/mistico.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+
+[mistico]:hover{
+  cursor: pointer;
+  -webkit-transition: background-image 0.6s ease-in-out;
+  transition: background-image 0.6s ease-in-out;
+  background-image: url(../imgs/mistico-2.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+}
+
+/*Texto*/
+[text]{
+    width: 100%;
+    text-align: center;
+    /*background: rgba(0, 0 , 0, .3);*/
+    /*opacity: 1;*/
+    color: white;
+    font-size: 30px;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+  }
+
+[logo-2]{
+  background-image: url(../imgs/logo.jpg); 
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  
+}
+/**********************************************************
+********************** SECCION 2 **************************
+**********************************************************/
+[seccion-2] {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+}
+[image-home-1]{
+  width: 20%; position: relative; top:53%; left: 10%;
+  background-color: transparent;
+  border:none;
+}
+[image-home-1]:hover{
+  cursor: pointer;
+}
+
+[image-home-2]{
+  width: 25%; position: relative; top:10%; left: 15%;
+  background-color: transparent;
+  border:none;
+}
+[image-home-2]:hover{
+  cursor: pointer;
+}
+
+[image-home-3]{
+  width: 35%; position: relative; top:53%; left:13%;
+  background-color: transparent;
+  border:none;
+}
+[image-home-3]:hover{
+  cursor: pointer;
+}
+
+/* Botones seccion 2 */
+
+[quienes-somos]{
+  width: 90%;
+  transform: skewX(170deg);
+}
+
+/***********************************************************
+*********************   SECCION 3  *************************
+***********************************************************/
+
+[seccion-3] {
+  width: 100%;
+  padding: 0 0%;
+  display: table;
+  /*background-image: url(../imgs/seccion-3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;*/
+  background-color: white;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+texto-pasos{
+  font-size: 22px;
+}
+[numero-paso]{
+  color: #528e42 !important; 
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/***********************************************************
+*********************   SECCION 4  *************************
+***********************************************************/
+[seccion-4] {
+  width: 100%;
+  padding: 0 0%;
+  display: table;
+  /*background-color: #eeeeee;*/
+  background-image: url(../imgs/background-seccion-4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+[titulo-seccion-4]{
+  font-family: 'Raleway', sans-serif;
+  background-color: #3ab44a;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 5%; 
+  font-size:30px
+}
+[imagen-lista]{
+  width: 40%;
+}
+[centrado-lista]{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+
+/****************************************************
+********************    SECCION 5    ****************
+****************************************************/
+
+[seccion-5] {
+  width: 100%;
+  padding: 0 0%;
+  display: table;
+  background-image: url(../imgs/background-seccion-5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+md-content{
+  font-family: 'Raleway', sans-serif;
+}
+
+.whatsapp{
+  border-radius: 1px;
+  padding-right: 4px;
+  width: 75px;
+  height: 20px;
+  font-size: 11px;
+  background-color: #57BB63;
+  color: white;
+}
+[gP]
+{
+  opacity: 0 !important;
+}
+
+
+/************************************************************
+************************   CUIDADOS    **********************
+************************************************************/
+
+[imagen-cuidados]{
+  width: 60%;
+}
+[titulo-subcategoria]{
+  color: black; 
+  font-weight: bold; 
+  font-size: 30px;
+}
+[subtitulo-categoria]{
+  color: #3ab44a;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+[boton-flotante]{
+  background-color:#57BB63;
+  position: fixed; 
+  z-index: 99;
+}
+
+/**************************************************************
+******************    RESTABLECER CONTRASEÑA  *****************
+**************************************************************/
+
+[contenedor-form]{
+  width: 30%;
+}
+[logo-form]{
+  width: 20%;
+}
+[label-form]{
+  font-size: 20px;
+}

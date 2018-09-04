@@ -1,0 +1,1244 @@
+<div class="wrapper">
+	<div class="content">
+
+		<!-- Toolbar Desktop -->
+		<dir-toolbar-desk></dir-toolbar-desk>
+
+
+		<!-- Toolbar móvil y sidenav-->
+		<dir-toolbar-movil></dir-toolbar-movil>
+
+		<md-content>
+			<div ng-show="subcategoria" class="spaceTool"></div>
+
+			<div hide-sm hide-xs ng-hide="subcategoria" style="background-color: #3ab44a" class="spaceTool"></div>
+			<div hide-sm hide-xs style="background-color: #3ab44a" class="spaceTool"></div>
+			<div ng-hide="subcategoria" style="background-color: #3ab44a" class="spaceTool"></div>
+			<div ng-show="subcategoria" class="spaceTool"></div>
+			<div hide-xs hide-sm ng-hide="subcategoria" style="background-color: #3ab44a" class="spaceTool"></div>
+
+			<div ng-show="subcategoria" centrado>
+				<article ng-show="id == 1">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<p>Se debe efectuar su limpieza, mantenerlas libres de hojas y flores secas, es tan o más importante que su riego,
+								es posible pulverizarlas con agua jabonosa, esta sirve para mantener lejos a los parásitos.</p>
+							<p>Es importante mantener las plantas limpias, para ellos se utiliza una esponja húmeda para quitar el polvo sobre las
+								dos caras de las hojas. El polvo detiene la luz necesaria para la fotosíntesis y, además, cierra los poros por debajo.
+								Se debe vaporizar las hojas frágiles o de tamaño pequeño. La poda del follaje hace crecer nuevos tallos y la planta
+								se vuelve más fuerte y más tupida.</p>
+							<p>En los casos en que el dueño del jardín deba ausentarse por un tiempo el cuidado de las plantas en estos casos se
+								limita a colocarlas alrededor de un cubo con agua del cual se desprenderán cordones gruesos que se enterrarán en
+								cada maceta, los cordones serán los encargados de conducir el agua por el cubo de acuerdo a las necesidades de cada
+								planta.</p>
+							<p>El exceso de agua es mucho más perjudicial para las plantas, si se vierte mucha agua sobre ella, lo más probable
+								es que se empobrezca la tierra dando lugar a la aparición de enfermedades y su consecuente marchitación.</p>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 2">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<p>Las plantas tienen que ser replantadas regularmente en unas macetas de un tamaño 2 veces superior para poder crecer.
+								Se debe dar la vuelta a la maceta y extraer delicadamente la planta, eliminar la tierra antigua o contaminada y
+								las raíces enfermas y cambiar de maceta en primavera o incluso en otoño. En el fondo de la nueva maceta, se debe
+								colocar una capa de gravilla, restos de maceta rota o bolas de arcilla para el drenaje y luego la tierra. Se debe
+								colocar la planta dentro y completar con tierra vegetal hasta 1 cm. del borde y regar abundantemente.</p>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 3">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<p>Las flores simbolizan la expresión anímica de la naturaleza humana. Dependiendo de la cultura, éstas pueden representar
+								diferentes cualidades de las personas, según su especie botánica.</p>
+							<p>Es una costumbre establecida regalar flores con la intención de mostrar sentimientos, unas veces positivos y otros
+								negativos, un alelí significa belleza duradera, una anémona silvestre representa el hastío.</p>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 4">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<p>El uso de fertilizantes es necesario si se desea que el jardín crezca fuerte. Los abonos afirman que las plantas
+								no se nutren de la tierra sino de sus minerales; los básicos son: nitrógeno, fósforo, potasio y calcio, todos ellos
+								se encuentran en forma de sales y a su vez no son los únicos necesarios para el correcto desarrollo de la vegetación.</p>
+							<p>Se debe aportar a la dieta de las plantas hierro, manganeso, magnesio, boro y zinc; estos son absorbidos por la vegetación
+								en los primeros meses a medida que se riega y el abono se va disolviendo.</p>
+							<p>Es recomendable el uso de fertilizantes en función de cada tipo de planta y la estación del año. Puede realizarse
+								con dos tipos de abono: sólido y líquido disuelto en agua; la única diferencia entre ambos es la rapidez de absorción
+								de los líquidos.</p>
+							<h3>Abonos para el suelo</h3>
+							<p>Un aporte semanal es suficiente para la mayoría de las plantas, este puede variar de una especie a otra. Los abonos
+								que actúan sobre las raíces existen en diferentes formas: sólidos, bastoncillos a colocar en la tierra, líquidos
+								a añadir al agua, o en polvo a repartir sobre la superficie de la tierra.</p>
+							<h3>Abonos para hojas</h3>
+							<p>Las plantas poco cuidadas durante algún tiempo se debilitan, las hojas crecen demasiado pequeñas, para ellos es importante
+								abonarlas regularmente sobre las hojas, lo que garantiza su absorción inmediata. Este proceso no es recomendable
+								realizarlo en otoño cpor el descanso vegetativo.</p>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 5">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<p>El agua compensa la evaporación y transporta las substancias nutritivas. El riego es una de las tareas más importantes
+								en la jardinería, las plantas necesitan de este proceso de forma abundante en verano, sin embargo, sólo se le debe
+								dar el aporte necesario. Las características de la planta y la tierra serán las que dictaminen el volumen de aporte
+								de agua; las tierras arenosas apenas retienen agua, por lo que se dbee calcular la dosis antes de regar. La tierra
+								arcillosa suelen encharcarse y pueden saturarse, aquí se debe efectuar el riego al atardecer para evitar la evaporación
+								inmediata, no se debe olvidar que esto es algo frecuente en los meses de verano.</p>
+							<p>El riego se hace en función de la naturaleza de la maceta. Las macetas de barro cocido dejan evaporar el agua por
+								sus paredes, pero no las macetas de plástico. Un cubre macetas bien ajustado alrededor de la maceta de barro cocido
+								reduce mucho la evaporación. No se dbee dejar nunca el agua estancarse al pie de las plantas.</p>
+							<p>En una maceta de 5 cm. de diámetro la tierra está seca el día después de regarla. Si la maceta alcanza el tamaño
+								de un cubo se quedará húmeda durante una semana. Las pequeñas macetas se calientan muy rápidamente, lo que lleva
+								a una evaporación más rápida del agua que contienen.</p>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 6">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<p>Cada flor tiene un significado propio y expresa un sentimiento diferente. La acacia significa elegancia, la flor
+								de cuclillo, ingenio. La acacia amarilla significa amor secreto; regalar un ramo de adelfa, representa la seducción;
+								el alelí amarillo, fidelidad en la adversidad; y un tulipán rojo significa una declaración de amor. Pero incluso
+								regalar una flor que se relaciona con un sentimiento positivo, puede representar lo contrario. Esto es así, si se
+								ofrece una flor al revés, en este caso, su significado positivo se invierte, de modo que la flor ahora representa
+								lo contrario.</p>
+							<p>Pero no todas las flores tienen asociado un sentimiento positivo. El [[ Aconitum|aconito]], significa que se desea
+								la muerte. La anémona abandono, y el crisantemo amarillo amor desdeñado.</p>
+							<p>La combinación y el arreglo de distintas flores. Un botón de rosa con un mirto significa "le confieso que quiero
+								ser su amante". Rosas miniaturas con margaritas significa "sus cualidades sobrepasan sus encantos de belleza". La
+								amistad también está representada por un geranio rojo escarlata con flor de la pasión y jacinto púrpura, que significa
+								"confío en que usted encontrará la consolación en la fe y, en este su dolor, le aseguro que mi amistad es incondicional".</p>
+							<p>No todas las combinaciones de flores representan un factor positivo, combinar rosas amarillas con hiedra significa
+								"sus celos han roto nuestra amistad".</p>
+							<p>La rosa, la reina del lenguaje del amor. Un ramo de rosas amarillas, significan debilitamiento del amor, celos e
+								inseguridad, una rosa blanca simboliza la inocencia. Las rosas rojas, expresan belleza. La rosa blanca y roja, mezcla
+								de sentimientos. La rosa sin espinas, sin miedo. La rosa blanca, "soy digno de ti". Y la rosa de Navidad, "alivia
+								mi ansiedad".</p>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 7">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria>Botrytis o Podredumbre gris</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/botrytis.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>El hongo Botrytis cinerea aparece con humedad alta, por encharcamiento o por exceso de agua. Afectan a hojas,
+										tallos, flores y frutos, los cuales se pudren recubiertos de un moho gris.</p>
+									<p>Evitar las heridas, ya que penetra por ahí en la planta.</p>
+									<p>Eliminar las partes afectadas y tratar con fungicida antibotrytis.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Roya</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/roya.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Hongo que produce manchas y bultitos coloreados sobre hojas y tallos.</p>
+									<p>Eliminar las partes afectadas y tratar con fungicida cuanto antes.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Mildiu</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/mildiu.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>En tiempo cálido y húmedo atacan a los brotes nuevos en primavera y, si no se combate este hongo, afea a las
+										plantas debilitándolas dañando su follaje.</p>
+									<p>Es necesario eliminar los desechos de las plantas afectadas impidiendo que el follaje infectado se mantenga en
+										el jardín para futuras infecciones. Aplicar fungicidas.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Oidio</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/oidio.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>El síntoma es un polvillo blanquecino sobre las hojas. Tratar con fungicida antioidio y eliminar la zona enferma.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Amarronamiento</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/amarronamiento.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Hongo de suelo Phytopthora, sobre todo coníferas en tuyas y cipreses (ojo a los setos formados por este tipo
+										de plantas), cuyo principal síntoma es la desecación del follaje, que se torna marrón, desde dentro hacia afuera.</p>
+									<p>La infección se produce en el sistema radicular, y se ve favorecida por un exceso de agua (encharcamiento) en el
+										terreno. </p>
+									<p>No regar en exceso. Existen fungicidas específicos.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Bacteriosis</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/bacterosis.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Algunas bacterias infectan nuestras plantas produciéndoles manchas en las hojas o pudriciones blandas malolientes.
+										Lo mejor es eliminar las zonas afectadas o plantas enteras.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Virosis</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/virosis.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Los virus junto a hongos y bacterias son los microorganismos causantes de enfermedades en las plantas. Producen
+										síntomas muy diversos.</p>
+									<p>Normalmente los virus no provocan la muerte de las plantas, pero reducen su valor ornamental y vigor.</p>
+									<p>Los virus no tienen remedio. La única solución es arrancar la planta afectada y quemarla para evitar contagios.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>¿Cómo prevenir enfermedades?</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>Mantén las plantas fuertes y vigorosas. Los parásitos atacan preferentemente a las plantas débiles. Regar y
+										abonar regularmente pero sin excesos.</p>
+									<p>Cuando llega el buen tiempo hay que estar atento porque empiezan los ataques de hongos (Oidio, Milidu, Roya, Botrytis,
+										etc.) y de plagas (Pulgones, Cochinillas, Mosca blanca, Araña roja, etc.).</p>
+									<p>Recoge y quema las hojas que hayan sido atacadas por hongos. </p>
+									<p>Emplea insecticidas y fungicidas de uso en Agricultura Ecológica como el azufre o el cobre (Caldo Bordelés: fungicida
+										contra Mildiu y Botrytis. Es una mezcla de sulfato de cobre, cal y agua).</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Azufre</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/azufre.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>El azufre es un fungicida que se usa para combatir una enfermedad de hongos llamada Oidio, Oidium, polvillo,
+										ceniza, etc., según se llame en la zona.</p>
+									<p>El azufre también tiene efecto acaricida: mata ácaros, unas arañitas casi microscópica, y es un nutriente para
+										las plantas (S).</p>
+									<p>El Oidio es fácil de prevenir y no tanto de combatir cuando ya ha aparecido.</p>
+									<p>El azufre puede ser de espolvoreo o mojable. El de espolvoreo quemará las hojas si sube la temperatura por encima
+										de 30ºC. Por tanto, con temperatura alta usar el azufre mojable. </p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>¿Cómo evitar plagas y enfermedades?</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>Cuando llega el buen tiempo hay que estar atento porque empiezan los ataques de hongos (Oidio, Milidu, Roya,
+												Botrytis, etc.) y de plagas (Pulgones, Cochinillas, Mosca blanca, Araña roja, etc.).</li>
+											<li>Mantén las plantas bien cultivadas, puesto que las plantas débiles son más propensas a las plagas que las plantas
+												sanas.</li>
+											<li>Regar y abonar regularmente pero sin excesos.</li>
+											<li>En el huerto, la rotación de cultivos disminuye los problemas.</li>
+											<li>Mantener la zona limpia de malas hierbas y deshechos del jardín y los arriates, ya que son reservorios de parásitos.</li>
+											<li>Observa, identifica temprano el problema y actúa.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 8">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria>Pulgones</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/pulgon.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Clavan su pico chupador y absorben savia. Deforman hojas y brotes, que se enrollan. Aparece también el hongo
+										Negrilla (Fumaginas spp.), de color negro, y hormigas que cuidan a los Pulgones. Hay pulgones de diferentes colores:
+										verdes, amarillos, marrones y negros.</p>
+									<p>Si el ataque es débil, corta las hojas y brotes dañados y dale una ducha con agua jabonosa. Un remedio casero consiste
+										en pulverizarlos con una dilución de una cucharilla de jabón blando y un chorrito de alcohol metílico en un litro
+										de agua. Esto se debe repetir regularmente. También tratamiento químico con insecticida.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Cochinillas</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/cochinilla.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Provocan deformación y posterior caída de hojas. Escudos blancos o marrones y superficie descolorida. Se usan
+										insecticidas sistémicos <i>(al absorber el jugo de la planta se envenena el insecto)</i>.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Mosca Blanca</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/mosca.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Las hojas pierden color, se abarquillan y llenan de sustancia pegajosa (melaza) y pueden caer. Sobre esta sustancia
+										pegajosa se asienta el hongo Negrilla, de color negro típico. Es útil pulverizar preventivamente contra Mosca
+										blanca y Pulgón.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Ácaros <i>(Arañas rojas)</i></h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/acaros.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Son unas arañas pequeñísimas de 1 milímetro que cuesta verlas a simple vista. Arranca de las zonas afectadas
+										y mira con una lupa o muy cerquita si ves correteando unas arañitas rojas minúsculas.</p>
+									<p>Lucha con acaricidas. Tratar cada 15 días en los meses de calor, luego nada, puesto que sólo actúan con temperatura
+										alta. Si pulverizas la planta con agua por encima, el agua molesta mucho a estos insectos.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Gusanos del suelo</i></h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/gusanos.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Son gusanos de distintas especies (blancos, grises o marrones) que roen las raíces. Loa Gusanos blancos son
+										los más habituales. Para comprobar si tienes estos peligrosos bichos, saca el cepellón de las macetas e inspecciona
+										con cuidado, sin dañar dicho cepellón; y también, con los dedos, escarba por la superficie a ver si descubres
+										algunos. Hay insecticidas.</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 9">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria></h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>Las enfermedades en las plantas están producidas por hongos, bacterias y virus. Para luchar contra los hongos
+												se aplican fungicidas; las Bacterias y Virus no tienen remedio.</li>
+											<li>Como enfermedades típicas del jardín tenemos el Oidio, Roya, Botritis y la pudrición de raíces. En ocasiones
+												aparecen Bacterias y Virus.</li>
+											<li>Inspecciona con regularidad las plantas, en especial, aquellas que fueron atacadas el año anterior. El detectar
+												y tratar las plagas y enfermedades en sus primeras fases es muy importante.</li>
+											<li>Una planta fuerte y bien cuidada en cuanto a riego, fertilización, clima adecuado, etc., resistirá mucho mejor
+												los ataques de insectos y hongos.</li>
+											<li>Si el año anterior ha habido invasiones de algún hongo, es lógico que vuelva a repetirse, por tanto, debes tratar
+												preventivamente con fungicidas.</li>
+											<li>Trata preventivamente los rosales una vez al mes con fungicida para evitar hongos como Oidio, Mildiu, Mancha
+												negra y Roya.</li>
+											<li>Para controlar hongos, elimina hojas, flores y partes infectadas y aplica un fungicida adecuado a cada caso.
+												Repite el tratamiento si reaparece.</li>
+											<li>Los fungicidas no sistémicos o de contacto quedan en la superficie de la hoja y al caer las esporas de los hongos
+												no pueden 'germinar', introducirse en ella. Se deben aplicar siempre antes de que aparezcan los primeros síntomas,
+												en épocas del año con condiciones favorables para que se dé la infección, generalmente con humedad alta y temperatura
+												suave. Si el hongo ya ha entrado (infectado), estos productos no le hacen nada puesto que son preventivos.</li>
+											<li>Los fungicidas sistémicos, a diferencia de los anteriores, no quedan en la superficie de la hoja, sino que penetran
+												en la planta y, gracias a la savia, se distribuyen por su interior. Tiene efectos curativos tras producirse
+												la infección.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Botrytis o Podredumbre gris</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/botrytis.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>El hongo Botrytis cinerea aparece con humedad alta, por encharcamiento o por exceso de agua. Afectan a hojas,
+										tallos, flores y frutos, los cuales se pudren recubiertos de un moho gris.</p>
+									<p>Evitar las heridas, ya que penetra por ahí en la planta.</p>
+									<p>Eliminar las partes afectadas y tratar con fungicida antibotrytis.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Mildiu</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/mildiu.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>En tiempo cálido y húmedo atacan a los brotes nuevos en primavera y, si no se combate este hongo, afea a las
+										plantas debilitándolas dañando su follaje.</p>
+									<p>Es necesario eliminar los desechos de las plantas afectadas impidiendo que el follaje infectado se mantenga en
+										el jardín para futuras infecciones. Aplicar fungicidas.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Oidio</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/oidio.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>El síntoma es un polvillo blanquecino sobre las hojas. Tratar con fungicida antioidio y eliminar la zona enferma.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Roya</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/roya.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Hongo que produce manchas y bultitos coloreados sobre hojas y tallos.</p>
+									<p>Eliminar las partes afectadas y tratar con fungicida cuanto antes.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Fitóftora</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/amarronamiento.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Destruye setos de Coníferas, árboles, arbustos, naranjos... Fitóftora (Phytophtora spp.) es un hongo que empieza
+										atacando el sistema radicular y sigue por el cuello de la planta. Se propaga con rapidez y acaba con la planta.
+										Aparece cuando el suelo está muy húmedo.</p>
+									<p>No se debe regar tanto el Ciprés de Leyland porque se pudren las raíces por la acción del hongo Fitóftora (Phytophthora
+										spp.). Es una enfermedad muy difícil de erradicar una vez está implantada. Mejora el drenaje, por ejemplo, dando
+										pendientes o colocando un tubo drenante para evacuar el exceso de agua. Se combate con cierta eficacia usando
+										algún fungicida específico para fitoftora; de manera preventiva y curativa si ya se aprecian síntomas.</p>
+									<p>También se secan porque no llega ahí la luz a la parte interior de las Coníferas como Leylandi, Arizónicas, Tuyas,
+										etc. y no es por la Fitóftora.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Antracnosis</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/antracnosis.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Antracnosis es una enfermedad causada por hongos. Se observan manchas sobre hojas, tallos, flores y frutos de
+										numerosas plantas ornamentales y huerto. Prosperan en ambientes cálidos y húmedos. No suele ser tan destructiva
+										como los anteriores hongos.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Cancro o Chancro</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/cancro.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>Los hongos del Chancro o Cancro infecta a árboles y arbustos través de las heridas de poda y grietas en la corteza.
+										Aplica pasta cicatrizante en cada corte de ramas de diámetro mayor de 5 cm.</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Otros trastornos o accidentes</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Las plantas pueden sufrir diversos accidentes o trastornos que no se deben confundir con hongos:
+										<ul>
+											<li> Falta o exceso de agua.</li>
+											<li>La sombra impide que florezcan, o que los tallos se ahílen y que las hojas amarilleen.</li>
+											<li>Quemaduras por el sol o que las hojas palidezcan en plantas que son de sombra, por ejemplo, la Hosta.</li>
+											<li>Las carencias de nutrientes minerales (Nitrógeno, Fósforo, Potasio, Hierro, etc.). Éstas se evitan abonando todos
+												los años. La carencia más común en la llamada clorosis férrica, por falta de Hierro, que se corrige añadiendo
+												quelatos de Hierro.</li>
+											<li>Un exceso de fertilizantes o de estiércol "quema" a las plantas. Si te has pasado con el abono, aplica riegos
+												abundantes para intentar "lavar" el exceso de fertilizantes.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 10">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria>Falta de agua</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/falta.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Cuando una planta está pasando sed los síntomas son: hojas secas, marchitez, caída de hojas, aborto de flores, etc.</p>
+									<p>Los efectos de la sequía también se notan al siguiente período vegetativo con escasa producción de brotes y flores
+										al no haber formado reservas.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Exceso de agua</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/exceso.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Regar en demasía provoca la asfixia y pudrición de las raíces.</p>
+									<p>Un caso frecuente: encinas o cualquier planta de climas secos como dragos, suculentas, etc., plantadas con césped
+										alrededor. Ahí reciben mucho riego y se pudren por este exceso de agua.</p>
+									<p>Riega lo necesario y mejora el drenaje del suelo o de la maceta.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Falta de luz</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/faltaluz.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										La mayoría de las plantas necesitan sol para florecer.</p>
+									<p>Las hojas amarillean o palidecen. O no, o se hacen más grandes y color verde oscuro para captar más luz.</p>
+									<p>Con poca luz los tallos se ahílan (crecen larguiruchos y endebles).</p>
+									<p>Las hojas variegadas de Cinta, Hiedra, Croton.. (manchadas de amarillo, crema u otros colores) pierden sus tonos
+										y las nuevas salen verdes.</p>
+									<p>En Plantas de interior la falta de luz es el mayor problema junto al exceso de riego.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Quemaduras solares</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/quemaduras.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Algunas especies no toleran la exposición directa a los rayos solares durante todo el día, produciéndoles en las hojas quemaduras,
+										por ejemplo, las Hostas, Plantas de interior tropicales, etc.</p>
+									<p>Un problema muy frecuente en relación a esto es poner de golpe una planta que ha estado a la sombra a pleno sol;
+										puede sufrir. Hay que acostumbrarla progresivamente de sombra a media sombra, unos ratos de sol al día y pleno
+										sol al final.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Ola de calor</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Las masas de aire caliente y con baja humedad son auténticos secadores para las plantas. Las marchita en pocas horas. En
+										estas situaciones, relativamente frecuentes en verano, se deben mantener bien regadas y pulverizar por encima
+										con regularidad.</p>
+									<p>En Plantas de interior el aire seco provoca puntas y bordes de hojas secos, hojas amarillas en muchísimas plantas.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Cambios bruscos de temperatura</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										No es bueno que sucedan subidas o bajadas fuertes de temperatura de golpe. La planta lo puede acusar tirando capullos o flores,
+										etc.</p>
+									<p>Las plantas originarias de climas tropicales, por ejemplo, muchas Plantas de interior, necesitan temperaturas muy
+										constantes a lo largo del año y las variaciones bruscas son dañinas.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Corrientes de aire</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Este problema afecta sobre todo a las plantas de interior. Pasillos, cerca de ventanas, al ventilar la casa, etc., puede
+										provocar caída de hojas, hojas amarillas y luego caen.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Fríos y heladas</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										El frío del invierno produce daños importantes en plantas delicadas, como las originarias de climas tropicales y subtropicales.</p>
+									<p>Las heladas primaverales matan brotes, flores o frutos pequeños durane la noche.</p>
+									<p>Para proteger la parte aérea es posible instalar un armazón de alambre cubierto con plásticos con agujeros, cortinas
+										viejas, tela de arpillera, mallas especiales agrícolas, etc.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Vientos</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>El viento fuerte y racheado produce rotura de ramas, caída de hojas, de flores y de frutos e incluso árboles
+												enteros.</li>
+											<li>El viendo seco marchita a los vegetales, puntas de hojas y bordes secos.</li>
+											<li>El viento frío quema a la planta.</li>
+											<li>El viento de la costa deposita sales del mar y éstas producen quemaduras en las hojas.</li>
+											<li>En zonas ventosas es preciso crear protecciones como setos, láminas de brezo, cañizos, muros, etc.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Granizo y pedrisco</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/quemaduras.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Las granizadas son muy destructivas. En plantas ornamentales provocan defoliación y marcas en hojas y tallos por donde pueden
+										entrar a continuación hongos y bacterias. En frutales puede acabar con la cosecha.</p>
+									<p>Pulveriza con un fungicida antibotritis al día siguiente de una granizada para prevenir la infección de las heridas
+										por el hongo Botritis. Se deberá tratar antes de pasadas 24 horas del granizo (o al día siguiente), lo importante
+										es realizarlo lo antes posible.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Nieve</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										La nieve acumulada troncha las plantas.</p>
+									<p>El hielo es dañino cuando se licua la nieve.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Envejecimiento natural</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>Una planta puede estar mal porque simplemente ha llegado el final de su vida, y no es otra la razón de su mal
+												estado.</li>
+											<li>El Margaritón (Chrysanthemum frutescens) envejece en unos años y se desguarnece por la base. Reponer en lugar
+												de dar poda rejuvenecimiento.</li>
+											<li>Gazania es de vida corta, envejece a los 4-5 años. Se renueva mediante esquejes en otoño.</li>
+											<li>Verbena x hybrida envejece pronto debiendo renovarse cada 3-4 años.</li>
+											<li>Los Lampranthus tienen una vida útil 3-4 años; luego se deben renovar plantando esquejes.</li>
+											<li>Los ágaves mueren después de florecer, así como algunas especies de palmeras, por ejemplo, Corypha umbraculifera
+												o Caryota urens, la cual a partir de los 12 ó 13 años desarrolla la inflorescencia que dura unos 5 años, tras
+												lo cual se seca el ejemplar lentamente, llegando a vivir unos 25-30 días.</li>
+											<li>Árboles que viven pocos años, con 25-30 años mueren o degeneran mucho:
+												<ul>
+													<li>Acacias</li>
+													<li>Níspero</li>
+													<li>Aligustre</li>
+													<li>Membrillero</li>
+													<li>Prunus</li>
+													<li>Las especies de árboles frutales van produciendo menos a partir de un cierto momento. Por ejemplo, el melocotón
+														a partir de los 15 años la producción decrece.</li>
+												</ul>
+											</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Letargo invernal de Vivaces</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Las Vivaces cuando llega el frío del invierno se secan sus tallos y hojas (puede que no totalmente, que quede una roseta
+										de hojas pegada al suelo, como Milenrama y Gaillardia). Sin embargo, sus raíces siguen vivas bajo tierra y en
+										primavera vuelven a brotar. Ejs.: Peonía, Astilbe, Helianthus, Delphinium, etc. Por tanto, no es que estén muertas,
+										sino que necesitan pasar este periodo de reposo o letargo invernal.</p>
+									<p>Las Plantas Bulbosas (Tulipán, Jacinto, Narciso, etc.) tienen una estrategia similar.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Vecería o alternancia</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Es un fenómeno que presentan algunas especies frutales en las que hay años que tienen mucha carga de frutos y al siguiente
+										muy baja. Años de superabundancia son de peor calidad (más pequeños).</p>
+									<p>Por ejemplo, el Olivo es muy "vecero", y a años de gran producción siguen otros de mucha menor carga. También cítricos,
+										mango, aguacate, etc. lo son.</p>
+									<p>Un olivo puede entra en un ciclo de alternancia si por ejemplo, un año hay una helada o una mala floración y tenemos
+										poca cosecha. Para solucionarlo (no es fácil) se puede hacer aclareo de ramas. Los años de poca metida hacer una
+										poda menor; si son más largas damos más poda.</p>
+									<p>En cítricos no mantener mucho el fruto por la inhibición floral, pero hay años que por maduración tenemos que correr
+										el riesgo y dejarlo más tiempo en el árbol.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Planta que no ha tenido "descanso"</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Es frecuentísimo en el Reino Vegetal la necesidad de una planta de pasar por un periodo de "descanso", es decir, temperaturas
+										más frescas, riego mínimo y abonado nulo. Esta es causa de malas brotaciones, floraciones y fructificaciones,
+										plantas que no han descansado. Los capullos de flor no se abren porque no tuvo un periodo de reposo invernal.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Carencias de nutrientes o enfermedades carenciales</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										La falta de uno o más de los 13 elementos esenciales que necesita toda planta provocará síntomas en hojas: más pequeñas,
+										descoloridas o amarillentas.
+										<ul>
+											<li>Nitrógeno</li>
+											<li>Fósforo</li>
+											<li>Potasio</li>
+											<li>Calcio</li>
+											<li>Magnesio</li>
+											<li>Azufre</li>
+											<li>Hierro</li>
+											<li>Manganeso</li>
+											<li>Boro</li>
+											<li>Cobre</li>
+											<li>Zinc</li>
+											<li>Molibdeno</li>
+											<li>Cloro</li>
+										</ul>
+										<p>Por ejemplo, la carencia más abundante en frutales es la de hierro (Fe) debido al elevado contenido de cal en
+											el suelo que impide que el hierro esté soluble y, por tanto, accesible para absorberlo las raíces.</p>
+										<p>Para evitar problemas, abona todos los años con un fertilizante equilibrado que incluya Nitrógeno, Fósforo y Potasio,
+											a ser posible de lenta liberación, o abonos orgánicos (mantillo, estiércol, humus de lombriz, etc.).</p>
+										<p>Conviene añadir un poco de quelatos de Hierro y de otros micronutrientes con el fin de conseguir unas hojas más
+											verdes. Si se no se abona nunca aparecerán las carencias tarde o temprano.
+										</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Exceso de nitrógeno</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/enfermedades/exceso.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Un exceso de fertilizante produce estos perjuicios:
+										<ul>
+											<li>"Quema" a las plantas, manifestándose en puntas y bordes secos.</li>
+											<li>Crecen mucho pero florecen poco.</li>
+											<li>Se crean plantas débiles y tiernas, y, por tanto, más propensas a las plagas y enfermedades, más débiles al viento,
+												a la lluvia y al frío.</li>
+										</ul>
+										<p>Si te has pasado con el abono, aplica riegos abundantes al suelo o substrato de la maceta para intentar "lavar"
+											el exceso de fertilizantes. En el caso de macetas, replanta con susbtrato.
+										</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Suelo malo</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Cuidado con lo que hay debajo: una roca dura, rellenos de restos de obras (escombros), una capa compactada, costras calizas
+										duras, rocas, escombros u hormigón. Podría amarillear si un árbol, o cualquier planta, no dispone de profundidad
+										útil para las raíces y se notará en un menor crecimiento.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Suelo salino</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Hay suelos con un contenido natural en sales alto que perjudica a las plantas. No son frecuentes pero algunas veces se dan.</p>
+									<p>Los síntomas son iguales que la sobrefertilización: necrosis que empiezan por las puntas y los bordes de las hojas.</p>
+									<p>La corrección consiste en dar varios riegos copiosos para que el agua arrastre las sales solubles y se eliminen
+										por el drenaje. En el caso de macetas, además del "lavado", es bueno el cambio del substrato.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>¿Riegas con agua salina?</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Ciertas aguas de pozo pueden llevar sales que queman las puntas de las hojas, amarillean y caen. Lo ideal es hacer un análisis
+										de agua en laboratorio y si es salina, no emplearla para riego.</p>
+									<p>Con frecuencia se usan aguas ligeramente salinas, pero en plantas sensibles es un problema, así como la progresiva
+										salinización del terreno por regar durante años con este tipo de aguas.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>¿Riegas con agua calcárea?</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Las aguas con mucha cal pueden provocar carencias de nutrientes minerales (Hierro, Manganeso o Zinc) en ciertas plantas (acidófilas)
+										al bloquearlos en el suelo como mineral insoluble.</p>
+									<p>Por ejemplo, a las acidófilas como Hortensia, Gardenia, Camelia, Brezo, Rododendro, Azalea, Fucsia, Skimmia, etc.,
+										les suele provocar clorosis, a menos que se acidifique el suelo y se aporten quelatos de hierro y otros micronutrientes
+										para evitarlo</p>
+									<p>Se corrigue el problema de las aguas calcáreas acidificando el agua, por ejemplo, con ácido cítrico. El ácido cítrico
+										es un producto barato, fácil de usar y útil para acidificar el agua de riego calcárea (dura), es decir, sirve
+										para bajar su pH.</p>
+									<p>Resulta muy aconsejable aportar al menos una vez al año quelatos de Hierro a todas las plantas para prevenir el
+										amarilleo por carencia de Hierro (clorosis férrica).
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>¿Riegas con agua muy fría tus plantas de interior?</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Las plantas tropicales no están acostumbradas a recibir agua fría. Déjala reposar por la noche en un cubo para que tome una
+										temperatura similar a la de la habitación, sobre todo en invierno.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Contaminación del suelo</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Orines de perros y gatos, detergentes, aceites, productos fitosanitarios... cualquier contaminante que haya podido caer al
+										suelo perjudica a las plantas.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Daños en raíces por labrar</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										No labres la tierra con la azada profundizando porque se rompen raíces.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Tratamientos fitosanitarios mal realizados</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Aplica la dosis indicada por el fabricante. Si dosificas 'a ojo' existe riesgo de quemaduras por sobredosificación.</p>
+									<p>No trates cuando haga mucho calor, sino al amanecer o al atardecer.</p>
+									<p>Ten cuidado que los herbicidas no caigan sobre las plantas llevados por el viento (deriva).
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Poda incorrecta</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>La poda agota, debilita y disminuye la longevidad.</li>
+											<li>Podas mal realizadas propician la penetración de hongos en heridas sin cicatrizar.</li>
+											<li>Hay plantas que no aguantan una poda fuerte, por ejemplo, los Prunus (Cerezos, Ciruelos, etc.), si se corta una
+												rama gorda pueden morir.</li>
+											<li>Algunas especies pueden perder mucha savia.</li>
+											<li>Transmisión de enfermedades por herramientas.</li>
+											<li>Te puedes cargar la floración de un arbusto, trepadora, etc., por hacer la poda en una época equivocada.</li>
+											<li>Escasa floración por no podar bien. Ejemplo: Rosal.</li>
+											<li>Ciertas Vivaces y Perennes necesitan una poda para que no decaigan al año siguiente. Por ej.: Santolina y Lavanda:
+												poda severa en otoño.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Enfermedad del suelo</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										En suelos cultivados por Rosales más de 10 años no se debe replantar con otro Rosal.</p>
+									<p>Las causas son: el agotamiento de microelementos, hongos que persisten y toxinas segregadas por el Rosal viejo.
+										Para evitarlo, cambia la tierra por otra.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Necesidad de cambio de maceta</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										Si la planta no crece, puede ser que tenga las raíces muy apretadas para la capacidad de la maceta. Trasplanta a una maceta
+										mayor.
+									</p>
+								</div>
+							</div>
+							<h4 subtitulo-categoria>Otros trastornos</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>ompactación del suelo en árboles.</li>
+											<li>Daños de raíces por hacer zanjas. Recortar la herida limpiamente y aplicar fungicida.</li>
+											<li>Evitar la elevada densidad de plantas que provoca debilitamiento y enfermedades, por ejemplo, en el arbolado
+												urbano.</li>
+											<li>Árboles como Brachychiton acerifolium florece en verano y pierde las hojas; es algo natural.</li>
+											<li>Los pinos sufren una defoliación natural en primavera-verano. También es algo normal.</li>
+											<li>Debajo de Eucaliptos, Pinos y Hayas, la mayoría de plantas tienen dificultades para vivir debido a las sustancias
+												tóxicas que estos árboles producen en el suelo.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 11">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria></h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li><strong>Amarillamiento y caída de las hojas más viejas</strong>:Exceso de agua y/o desagüe obstruido.</li>
+											<li><strong>Crecimiento escaso, hojas pálidas que se secan empezando por las de abajo y no se caen </strong>:Carencia
+												de Nitrógeno.</li>
+											<li><strong>Crecimiento lento o nulo, hojas pequeñas </strong>:Tierra pobre e inadecuada, maceta pequeña o falta
+												de abono.</li>
+											<li><strong>Cuello ennegrecido</strong>:Hongos o bacterias.</li>
+											<li><strong>Flores y capullos que no se abren </strong>: Luz insuficiente.</li>
+											<li><strong>Flores o botones florales que caen</strong>: Exceso de calor, falta de luz, ambiente seco</li>
+											<li><strong>Flores y botones descoloridos, manchados, que se pudren </strong>: Hongos (Botrytis).</li>
+											<li><strong>Hojas amarillas </strong>: Exceso de agua, carencia de luz o corrientes de aire.</li>
+											<li><strong>Hojas color verde oscuro y además se vuelven amarillas y caen </strong>: Exceso de riego.</li>
+											<li><strong>Hojas con agujeros </strong>: Babosas, caracoles u orugas. Pulveriza con un insecticida específico.</li>
+											<li><strong>Hojas con los bordes secos y arrugados </strong>: Podría ser falta de potasio. Abona con un fertilizante
+												que lo contenga en cantidad.</li>
+											<li><strong>Hojas con manchas marrones y finas telarañas en el envés </strong>: Araña roja. Rocía con un acaricida
+												y pulveriza con agua regularmente.</li>
+											<li><strong>Hojas con puntas secas que se caen </strong>: Exceso de calor.</li>
+											<li><strong>Hojas con puntas y bordes secas </strong>: Riega más, aumenta la humedad ambiental y comprueba si no
+												hay un exceso de fertilizantes.</li>
+											<li><strong>Hojas demasiado carnosas, grandes y verdes y escasa floración </strong>: Exceso de Nitrógeno.</li>
+											<li><strong>Hojas lacias, colgantes, marchitas </strong>: Sequedad de la tierra.</li>
+											<li><strong>Hojas más pequeñas de lo normal, crece poco </strong>: Falta de nutrientes.</li>
+											<li><strong>Hojas pálidas y ausencia floración </strong>: Necesita más luz.</li>
+											<li><strong>Hojas que caen </strong>: Quizás necesite más luz, más riego, haya corrientes de aire o cambios bruscos
+												de temperatura.</li>
+											<li><strong>Hojas que pierden el variegado y los nuevos brotes salen verdes </strong>: Luz insuficiente.</li>
+											<li><strong>Hojas secas y desprendiéndose </strong>: Necesita más luz o más riego y menos calor.</li>
+											<li><strong>Hojas sin brillo, descoloridas </strong>: Exceso de luz.</li>
+											<li><strong>Planta alargada y descolorida, escasa floración </strong>: Falta de luz.</li>
+											<li><strong>Planta con desarrollo asimétrico </strong>: Luz de un sólo lado.</li>
+											<li><strong>Planta desgarbada o larguirucha </strong>: Falta de poda o de despunte.</li>
+											<li><strong>Raíces con bultitos </strong>: Nemátodos (Gusanos microscópicos).</li>
+											<li><strong>Tallo con manchas negras o color café </strong>: Hongos.</li>
+											<li><strong>Tallo mordido a ras del suelo </strong>: Cochinillas de la humedad, Gusanos grises, Rosquilla negra.
+												</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 12">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria>Colémbolos</h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="20" flex-sm="100" flex-xs="100">
+									<img ng-src="imgs/cuidados/colembolos.jpg" imagen-cuidados>
+								</div>
+								<div flex="80" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>En las macetas, en la tierra, se pueden ver unos bichitos blancos pequeñísimos. Esos bichitos pueden ser <strong>Colémbolos</strong>,
+												que en principio no hacen ningún mal a la planta. Están ahí porque la tierra está fresca y mullida. Huyen de
+												la luz. Cuando esté mas reseca la superficie y hace más calor desaparecen.</li>
+											<li>Existen también una especie de <strong>moquitos o pequeños insectos voladores</strong> que pueden aparecer en
+												la tierra de las macetas y en los semilleros. Insecticida para mantenerlos alejados. Hay que repetir la operación
+												porque dejan huevos. Así que aunque no se vean más se repetirá la dosis al menos 3 veces más cada 5 días.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+				<article ng-show="id == 13">
+					<md-button ng-click="mostrarCategoria()" class="md-icon-button" aria-label="back" boton-flotante>
+						<md-icon md-svg-src="imgs/icons/ic_keyboard_backspace_white_24px.svg"></md-icon>
+					</md-button>
+					<div layout="column">
+						<md-toolbar layout="row" class="md-primary" style="background-color: transparent; !important; z-index: 0;">
+							<div class="md-toolbar-tools">
+								<span flex="" centrar></span>
+								<texto titulo-subcategoria>{{sub}}</texto>
+								<span flex></span>
+							</div>
+						</md-toolbar>
+						<div hide-sm hide-xs class="spaceTool"></div>
+						<md-content justificar centrado>
+							<h4 subtitulo-categoria></h4>
+							<div layout="row" layout-sm="column" layout-xs="column" layout-align="center center">
+								<div flex="100" flex-sm="100" flex-xs="100" justificar>
+									<p>
+										<ul>
+											<li>Los pájaros picotean frutos, hortalizas o semillas de césped, hay varias estrategias:</li>
+											<li>Redes o mallas finas. Por ejemplo, para césped recién sembrados, se pueden disponer sobre palos clavados a baja
+												altura.</li>
+											<li>Poner redes en los árboles con frutos, cerezas... Se clava un palo largo (o un tubo) pegado al tronco, y en la
+												punta, la red, como una tienda de campaña o una carpa.</li>
+											<li>Los racimos la uva de la parra proteger los mejores de los pájaros con conos del papel de estraza, dejando algunos
+												al descubierto para que se centren en ellos los pájaros y no piquen a los otros.</li>
+											<li>Las bolsas que se utilizan para embolsar la fruta las venden especiales para ello, son de papel de parafina y
+												se sujetan con una grapa. Protege de la mosca de la fruta, abejas o avispas que daña la fruta, además de conseguir
+												un grado de maduración óptimo.</li>
+											<li>En los huertos comerciales es el melocotón de media y tardía maduración el que se embolsa. En los huertos destinados
+												al consumo familiar se acostumbra a embolsar además del melocotón, pavías o nectarinas, manzanas, peras, membrillos.
+												El resto de la fruta no merece la pena por el tamaño, tiempo y coste que supone.</li>
+											<li>Es importante hacer el embolsado antes de que aparezca la temida mosca de la fruta, suele hacerse desde finales
+												de abril hasta mediados/finales de junio en España, depende de la zona.</li>
+											<li>Un espantapájaros tradicional también funciona, bien hecho: jersey viejo, pantalón usado, unos zapatos viejos
+												y unos guantes con manos en forma de hombre, incluso una gorra oscura y una cara blanca con ojos negros grandotes.
+												Cambiarlo de sitio regularmente.</li>
+											<li>Una cinta de casete o vídeo vieja, desenrollada y atada por el jardín o en ramas de árboles cuando sopla el aire
+												hacen un silbidillo que los espanta. Funciona bastante bien con los pájaros, sobre todo al principio, luego
+												ya se lo aprenden y pierde algo de eficacia.</li>
+											<li>Al plantar el césped, poner una cinta de una casete vieja desenrollada atada a un árbol central, de manera que
+												se mueva con el viento; estético no queda, pero funciona.</li>
+											<li>Unos CD's de música colgados producen reflejos que los espantan, pero lo mismo, durante unos días.</li>
+											<li>Venden en los centros de jardinería unas tiras de color verde que brillan con el sol y se mueven con el viento.
+												Eficaces.</li>
+											<li>En las macetas ata hilos medio tensos de forma que los pájaros tengan que pasar por los hilos para llegar a las
+												macetas. El miedo a enredarse les hace buscar otros bocados más apetecibles. Buen resultado con palomas.</li>
+											<li>También se puede clavar en la tierra de macetas molinetes de esos de colores, de jugar los niños, de forma que
+												sobresalgan por encima de las plantas. Hacen como de espantapájaros.</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</md-content>
+					</div>
+				</article>
+			</div>
+
+			<div ng-hide="subcategoria">
+				<div encabezado>RECOMENDACIONES GENERALES</div>
+				<md-content class="md-padding" layout-xs="column" layout-sm="column" layout="row" layout-md="column" centrado>
+					<div flex-xs flex-gt-xs="50" layout="column" flex-sm="100">
+						<md-card ng-click="mostrar_subcategorias(1, 'Cuidados')">
+							<img ng-src="imgs/cuidados/cuidados.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Cuidados</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(4, 'Fertilizantes')">
+							<img ng-src="imgs/cuidados/fertilizante.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Fertilizantes</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(7, 'Enfermedades más comúnes')">
+							<img ng-src="imgs/cuidados/enferma.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Enfermedades más comúnes</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(10, 'Trastornos de las plantas')">
+							<img ng-src="imgs/cuidados/trastornos.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Trastornos de las plantas</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(13, 'Proteger las plantas de pájaros')">
+							<img ng-src="imgs/cuidados/proteccion.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Proteger las plantas de pájaros</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+					</div>
+					<div flex-xs flex-gt-xs="50" layout="column" flex-sm="100">
+						<md-card ng-click="mostrar_subcategorias(2, 'Crecimiento')">
+							<img ng-src="imgs/cuidados/crecimiento.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Crecimiento</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(5, 'Riego')">
+							<img ng-src="imgs/cuidados/riego.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Riego</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(8, 'Plagas más comúnes')">
+							<img ng-src="imgs/cuidados/plagas.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Plagas más comúnes</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(11, 'Síntomas y causas')">
+							<img ng-src="imgs/cuidados/sintomas.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Síntomas y causas de los problemas de las plantas </span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+					</div>
+					<div flex-xs flex-gt-xs="50" layout="column" flex-sm="100">
+						<md-card ng-click="mostrar_subcategorias(3, 'Lenguaje de las flores')">
+							<img ng-src="imgs/cuidados/lenguaje.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Lenguaje de las flores</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(6, 'Significados')">
+							<img ng-src="imgs/cuidados/variedad.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Significados</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(9, 'Hongos más comúnes')">
+							<img ng-src="imgs/cuidados/hongos.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Hongos más comúnes</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+						<md-card ng-click="mostrar_subcategorias(12, 'Colémbolos')">
+							<img ng-src="imgs/cuidados/colembolos.jpg" style="width: 100%;">
+							<md-card-title>
+								<md-card-title-text>
+									<span class="md-headline">Colémbolos</span>
+								</md-card-title-text>
+							</md-card-title>
+						</md-card>
+					</div>
+				</md-content>
+			</div>
+		</md-content>
+
+		
+	</div>
+
+	<div class="footer">
+
+		<dir-footer></dir-footer>
+
+	</div>
+	
+</div>

@@ -1,0 +1,51 @@
+<div class="wrapper">
+	<div class="content">
+
+		<!-- Toolbar Desktop -->
+		<dir-toolbar-desk></dir-toolbar-desk>
+
+
+		<!-- Toolbar móvil y sidenav-->
+		<dir-toolbar-movil></dir-toolbar-movil>
+
+
+		<md-content class="spaceTool">
+			<div centrado style="margin-top: 10%">
+				<div>
+					<md-grid-list md-cols-gt-md="12" md-cols="1" md-cols-sm="2" md-cols-md="8" md-row-height-gt-md="5:5" md-row-height="5:5"
+					 md-gutter-gt-md="16px" md-gutter-md="8px">
+						<md-grid-tile md-colspan-gt-sm="3" md-rowspan-gt-sm="4" class="card centrar" ng-repeat="planta in galeria_plantas">
+							<md-card layout-fill>
+								<div share>
+									<div izquierda>
+										<img ng-src="{{planta.icono}}" style="width: 20%">
+									</div>
+								</div>
+								<div titulo>{{planta.nombre_planta}}</div>
+								<div subtitulo>({{planta.nombre_cientifico}})</div>
+								<div tarjeta-imagen ng-click="visualizar_planta(planta.id_planta)">
+									<img ng-if="planta.imagen != 'plantas/default.jpg'" ng-src="{{planta.imagen}}">
+									<md-content layout="column" layout-align="center center">
+										<img ng-if="planta.imagen == 'plantas/default.jpg'" ng-src="{{planta.imagen}}" style="width: 60%;">
+									</md-content>
+									<md-tooltip md-delay="400" md-direction="bottom" md-autohide="true">
+										{{ planta.nombre_planta }}
+									</md-tooltip>
+								</div>
+							</md-card>
+						</md-grid-tile>
+					</md-grid-list>
+				</div>
+			</div>
+		</md-content>
+
+	</div>
+
+	<div class="footer">
+
+		<dir-footer></dir-footer>
+
+	</div>
+
+
+</div>

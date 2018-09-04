@@ -1,0 +1,491 @@
+
+/***********************************************************
+********************    RESPONSIVE    **********************
+***********************************************************/
+
+@media (min-width: 2000px){
+
+	[logoTool]{
+	  margin-left: 120px !important;
+	}
+	texto-pasos{
+	  font-size: 50px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 50 px;
+	}
+	[imagen-lista]{
+	  width: 60%;
+	}
+	[titulo-seccion-4]{
+	  height: 10%; 
+	  font-size:35px;
+	}
+	[contenedor-form]{
+	  width: 60%;
+	}
+	[logo-form]{
+	  width: 50%;
+	}
+	[label-form]{
+	  font-size: 30px;
+	}
+
+}
+
+@media (min-width: 1600px){
+
+	[logoTool]{
+	  padding-left: 325px !important;
+	}
+	texto-pasos{
+	  font-size: 20px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 40px;
+	}
+	[contenedor-form]{
+	  width: 50%;
+	}
+	[logo-form]{
+	  width: 20%;
+	}
+	[label-form]{
+	  font-size: 30px;
+	}
+
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+	[logoTool]{
+	  margin-left: -65px !important;
+	}
+	li { 
+	    font-size: 13px;
+	    margin-bottom: 0px;
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	[encabezado]{
+	  font-size: 20px;
+	}
+	texto-pasos{
+	  font-size: 17px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 35px;
+	}
+	[imagen-lista]{
+	  width: 50%;
+	}
+	[contenedor-form]{
+	  width: 60%;
+	}
+	[logo-form]{
+	  width: 30%;
+	}
+	[label-form]{
+	  font-size: 30px;
+	}
+}
+
+@media (min-width: 960px) and (max-width: 999px) {
+	[contactanos]{
+	  width: 28% !important;
+	}
+
+	[logoTool]{
+	  padding-left: 50px;
+	}
+	li { 
+	    font-size: 13px;
+	    margin-bottom: 0px;
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	[encabezado]{
+	  font-size: 20px;
+	}
+	texto-pasos{
+	  font-size: 16px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 30px;
+	}
+	[contenedor-form]{
+	  width: 60%;
+	}
+	[logo-form]{
+	  width: 30%;
+	}
+	[label-form]{
+	  font-size: 30px;
+	}
+	
+}
+
+@media (min-width: 767px) and (max-width: 959px) {
+	[centrado]{
+	  padding-left: 8%;
+	  padding-right: 8%;
+	}
+	[general] {
+		padding-top: 20%;
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+
+	[share]{
+		display: inline-block !important;
+		list-style-type: none;
+		margin-top: 5px;
+	}
+	[izquierda]{
+		float: left;
+		display: inline-block;
+		margin-left: 12px !important;
+	}
+	[derecha]{
+		float: right;
+		display: inline-block;
+		margin-right: 12px !important;
+	}
+	[titulo]{
+		font-size: 140%;
+		text-align: center;
+		font-weight: bold;
+	}
+	[subtitulo]{
+		font-size: 80%;
+		text-align: center;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+	[contenido]{
+		width: 90%;
+		align-content:  center !important;
+		margin-bottom: 5%;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	[pie]{
+		margin-bottom: 0px;
+	}
+	[logo]{
+		width: 30%;
+	}
+
+	[h1Home]{
+	  font-size: 300%;
+	  color: #1A765F !important;
+	  text-align: justify;
+	}
+
+	[pHome]{
+	  font-size: 150%;
+	  color: #291C14 !important;
+	  text-align: justify;
+	}
+
+	[centrarContent]{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+
+	[mapa]{
+	  height: 300px;
+	}
+
+	[contactanos]{
+	  width: 70% !important;
+	}
+	[fuente]{
+	  font-size:12px;
+	}
+	texto-pasos{
+	  font-size: 22px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 30px;
+	}
+	[imagen-lista]{
+	  width: 50%;
+	}
+	[contenedor-form]{
+	  width: 60%;
+	}
+	[logo-form]{
+	  width: 30%;
+	}
+	[label-form]{
+	  font-size: 30px;
+	}
+}
+@media (min-width: 390px) and (max-width: 767px) {
+	[centrado]{
+	  padding-left: 8%;
+	  padding-right: 8%;
+	}
+	[general] {
+		padding-top: 20%;
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+
+	[share]{
+		display: inline-block !important;
+		list-style-type: none;
+		margin-top: 5px;
+	}
+	[izquierda]{
+		float: left;
+		display: inline-block;
+		margin-left: 12px !important;
+	}
+	[derecha]{
+		float: right;
+		display: inline-block;
+		margin-right: 12px !important;
+	}
+	[titulo]{
+		font-size: 140%;
+		text-align: center;
+		font-weight: bold;
+	}
+	[subtitulo]{
+		font-size: 80%;
+		text-align: center;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+	[contenido]{
+		width: 80%;
+		align-content:  center !important;
+		margin-bottom: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	[pie]{
+		margin-bottom: 0px;
+	}
+	[logo]{
+		width: 50%;
+	}
+
+	[h1Home]{
+	  font-size: 300%;
+	  color: #1A765F !important;
+	  text-align: justify;
+	}
+
+	[pHome]{
+	  font-size: 150%;
+	  color: #291C14 !important;
+	  text-align: justify;
+	}
+
+	[centrarContent]{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+
+	[mapa]{
+	  height: 300px;
+	}
+
+	[contactanos]{
+	  width: 70% !important;
+	}
+	li { 
+	    font-size: 14px;
+	    margin-bottom: 5px;
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	[encabezado]{
+	  font-size: 20px;
+	}
+	[fuente]{
+	  font-size:12px;
+	}
+	texto-pasos{
+	  font-size: 12px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 25px;
+	}
+	[titulo-seccion-4]{
+	  height: 10%; 
+	  font-size:20px
+	}
+	[imagen-lista]{
+	  width: 40%;
+	}
+	[centrado-lista]{
+	  padding-left: 6%;
+	  padding-right: 6%;
+	}	
+	[imagen-cuidados]{
+		width: 70%;
+	}
+	[titulo-subcategoria]{
+	  color: black; 
+	  font-weight: bold; 
+	  font-size: 20px;
+	}
+	[subtitulo-categoria]{
+	  color: #3ab44a;
+	  font-size: 12px;
+	  font-family: 'Raleway', sans-serif;
+	  font-weight: bold;
+	  text-align: center;
+	}
+	[boton-flotante]{
+	  background-color:#57BB63;
+	  position: fixed; 
+	  z-index: 99;
+	  top: 12%;
+	  left: 0px;
+	}
+	[contenedor-form]{
+	  width: 90%;
+	}
+	[logo-form]{
+	  width: 50%;
+	}
+	[label-form]{
+	  font-size: 20px;
+	}
+}
+@media (max-width: 390px) {
+	[centrado]{
+	  padding-left: 8%;
+	  padding-right: 8%;
+	}
+	[general] {
+		padding-top: 20%;
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+
+	[share]{
+		display: inline-block !important;
+		list-style-type: none;
+		margin-top: 5px;
+	}
+	[izquierda]{
+		float: left;
+		display: inline-block;
+		margin-left: 12px !important;
+	}
+	[derecha]{
+		float: right;
+		display: inline-block;
+		margin-right: 12px !important;
+	}
+	[titulo]{
+		font-size: 140%;
+		text-align: center;
+		font-weight: bold;
+	}
+	[subtitulo]{
+		font-size: 80%;
+		text-align: center;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+	[contenido]{
+		width: 70%;
+		align-content:  center !important;
+		margin-bottom: 5%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	[pie]{
+		margin-bottom: 0px;
+	}
+
+	[logo]{
+		width: 80%;
+	}
+
+	[h1Home]{
+	  font-size: 300%;
+	  color: #1A765F !important;
+	  text-align: justify;
+	}
+
+	[pHome]{
+	  font-size: 150%;
+	  color: #291C14 !important;
+	  text-align: justify;
+	}
+
+	[centrarContent]{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+
+	[mapa]{
+	  height: 250px;
+	}
+
+	[contactanos]{
+	  width: 100% !important;
+	}
+	li { 
+	    margin-bottom: 0px;
+	    font-family: 'Raleway', sans-serif;
+	}
+
+	[encabezado]{
+	  font-size: 20px;
+	}
+	[fuente]{
+	  font-size:10px;
+	}
+	texto-pasos{
+	  font-size: 12px;
+	}
+	[numero-paso]{
+	  color: white; 
+	  font-size: 20px;
+	}
+	[titulo-seccion-4]{
+	  height: 5%; 
+	  font-size:15px
+	}
+	[imagen-lista]{
+	  width: 40%;
+	}
+	[imagen-cuidados]{
+	  width: 100%;
+	}
+	[titulo-subcategoria]{
+	  color: black; 
+	  font-weight: bold; 
+	  font-size: 15px;
+	}
+	[boton-flotante]{
+	  background-color:#57BB63;
+	  position: fixed; 
+	  z-index: 99;
+	  top: 14%;
+	  left: 0px;
+	}
+	[contenedor-form]{
+	  width: 90%;
+	}
+	[logo-form]{
+	  width: 50%;
+	}
+	[label-form]{
+	  font-size: 20px;
+	}
+}
